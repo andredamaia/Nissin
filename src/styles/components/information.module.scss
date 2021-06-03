@@ -1,0 +1,123 @@
+.information {
+
+    position: relative;
+    overflow: hidden;
+
+    .areaLightleft {
+        background: var(--color-title);
+        padding: 4rem 2rem 4rem 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        position: relative;
+
+        img {
+            margin-right: 1rem;
+            width: 30px;
+        }
+
+        p {
+            color: #ffffff;
+            margin-bottom: 0;
+            line-height: 2rem;
+
+            span {
+                font-size: 1.6rem;
+                font-weight: 700;
+                line-height: 2.4rem;
+                display: block;
+                color: #ffffff;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 4000px;
+            height: 100%;
+            right: 100%;
+            top: 0;
+            background: var(--color-title);
+        }
+        
+    }
+
+    .areaLightright {
+        background: var(--color-title);
+        padding: 4rem 3rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        position: relative;
+
+        img {
+            margin-right: 1rem;
+            width: 30px;
+        }
+
+        p {
+            color: #ffffff;
+            margin-bottom: 0;
+            line-height: 2rem;
+
+            span {
+                font-size: 1.6rem;
+                font-weight: 700;
+                line-height: 2.4rem;
+                display: block;
+                color: #ffffff;
+            }
+        }
+
+       
+        &::after {
+            content: "";
+            position: absolute;
+            width: 4000px;
+            height: 100%;
+            left: 100%;
+            top: 0;
+            background: var(--color-title);
+        }
+    }
+
+    
+
+    .areaDarkBlue {
+        background: #0F213E;
+        padding: 4rem 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        img {
+            margin-right: 1rem;
+            width: 20px;
+        }
+
+        p {
+            color: #ffffff;
+            margin-bottom: 0;
+            line-height: 2rem;
+
+            span {
+                font-size: 1.6rem;
+                font-weight: 700;
+                line-height: 2.4rem;
+                display: block;
+                color: #ffffff;
+            }
+        }
+
+        
+    }
+
+    .fullContainer {
+        padding: 0;
+        width: 33.3%;
+    }
+}
