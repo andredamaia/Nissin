@@ -19,7 +19,7 @@ export default function Produtos() {
 
         gsap.to('.transition-text i', {
             delay: -.05,
-            top: 0,
+            y: 0,
             duration: 1,
             stagger: {
                 amount: .3
