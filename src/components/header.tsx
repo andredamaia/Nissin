@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import styles from '../styles/components/header.module.scss'
 
 export default function Header () {
@@ -5,15 +7,15 @@ export default function Header () {
       <header className={styles.header}>
         <div className="container-fluid">
           <div className="row">
-           <div className="col-12  col-md-4 col-xl-4">
-              <a href="/"><img src="logo.png" alt="Nissin solutions" /></a> 
+            <div className="col-12  col-md-4 col-xl-4">
+              <Link href="/"><a><img src="logo.png" alt="Nissin solutions" /></a></Link>
             </div> 
 
             <div className="col-12 col-md-8 col-xl-8">
               <div className={styles.menu}>
                 <div className={styles.submenuInfos}>
                   <div className={styles.infos}>
-                    <a href="#">
+                    <a href="mailto:contato@nissinsolutions.com.br">
                         <img src="email.png" alt="" />
                         
                         contato@nissinsolutions.com.br
@@ -23,22 +25,22 @@ export default function Header () {
                   <div className={styles.infos}>
                     <img src="phone.png" alt="" />
 
-                    <a href="#">+55 (47) 3029-0985</a>
+                    <a href="tel:+554730290985">+55 (47) 3029-0985</a>
 
                     <span>•</span>
 
-                    <a href="#">+55 (47) 98849-6155</a>
+                    <a href="tel:+5547988496155">+55 (47) 98849-6155</a>
                   </div>
                 </div>
 
                 <div className={styles.menuList}>
-                  <a href="/">Home</a>
+                  <Link href="/"><a>Home <div className={styles.line}></div></a></Link>
 
-                  <a href="#">Sobre</a>
+                  <Link href="/sobre"><a>Sobre <div className={styles.line}></div></a></Link>
 
-                  <a href="/produtos">Produtos</a>
+                  <Link href="/produtos"><a>Produtos <div className={styles.line}></div></a></Link>
 
-                  <a href="/contato">Contato</a>
+                  <Link href="/contato"><a>Contato <div className={styles.line}></div></a></Link>
                 </div>
               </div>
             </div>

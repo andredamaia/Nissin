@@ -1,8 +1,7 @@
 .header {
-    padding: 6rem 0 18rem;
+    padding: 2rem 2rem 18rem;
     background: url('../../../public/bg-header.png') bottom no-repeat;
-    background-size: contain;
-
+    background-size: cover;
 
     .menu {
         display: flex;
@@ -26,9 +25,12 @@
                 a {
                     color: #969696;
                     text-decoration: none;
+                    position: relative;
+                    display: inline-block;
 
                     &:hover {
                         color: #969696;
+                        text-decoration: underline;
                     }
                 }
 
@@ -47,27 +49,47 @@
             }
         }
 
-        .menuList { margin-top: 1rem;}
+        .menuList { 
+            margin-top: 2rem;
+        }
 
         .menuList a {
             margin: 0 2.3rem;
             font-size: 1.8rem;
             font-weight: 600;
-            color: #3E3E3E;
+            color: var(--color-nile-blue);
             text-decoration: none;
             transition: all .3s ease-in-out;
+            position: relative;
+            display: inline-block;
 
             &:hover {
-                font-weight: 700;
+                color: var(--color-nile-blue);
+
+                .line {
+                    transform-origin: left center;
+                    transform: scale(1, 1) translate(0, 0);
+                }
             }
     
             &:last-child {
                 margin-right: 0;
             }
-        }
 
-        
-        
+            .line {
+                opacity: 1;
+                transform-origin: right top;
+                transform: scale(0, 1);
+                bottom: 2px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                transition: transform .3s cubic-bezier(.645,.045,.355,1);
+                background: var(--color-nile-blue);
+            }
+        }
     }
 }
 

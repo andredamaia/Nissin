@@ -5,15 +5,13 @@
     position: relative;
 
     .titleBanner {
-
         a {
             font-size: 3.2rem;
             font-weight: 600;
             line-height: 9.8rem;
-            color: var(--color-primary);
+            color: var(--color-mantis);
             text-decoration: none;
             transition: all .3s ease-in-out;
-            
     
             &:hover {
                 color: #fff;
@@ -68,7 +66,6 @@
     } 
 
     .swiperParceiros {
-
         .parceirosHolder {
             display: flex;
             justify-content: center;
@@ -77,29 +74,23 @@
 
             img { max-width: 90%;}
         }
+    } 
 
-        .swiper-container {
-            .swiper-button-prev {
-                left: -8px;
-    
-                .swiper-button-prev:after {  
-                    font-size: 20px;
-                    z-index: 1000;
-                    color: #90C652;
-                }
-            }
-    
-            .swiper-button-next{
-                right: -8px;
-                
-                .swiper-button-prev:after {  
-                    font-size: 20px;
-                    z-index: 1000;
-                    color: #90C652;
-                }
+    @media (max-width: 769px) {
+        .areaWhite {
+            .boxProdutos{
+                grid-template-columns: 1fr;
             }
         }
-    } 
+    }
+
+    @media (max-width: 769px) {
+        .areaWhite {
+            .boxProdutos{
+                grid-template-columns: 1fr;
+            }
+        }
+    }
 }
 
 .halfColor {
@@ -125,7 +116,6 @@
     }
 
     .description {
-        
         p { 
             padding-right: 8rem;
             font-size: 1.6rem;
@@ -190,10 +180,7 @@
         height: 100%;
         opacity: .1;
     }
-
 }
-
-
 
 .imagesTools {
     padding: 0 0 5.7rem;
@@ -210,23 +197,10 @@
 }
 
 .aboutNissin {
-
     background: url('../../../public/bg-nissin.jpg') center no-repeat;
-    // background-size: cover;
+    background-size: cover;
 
     h2 {
         margin-bottom: 5rem;
     }
-}
-
-
-@media (max-width: 769px) {
-
-    .areaWhite {
-
-        .boxProdutos{
-            grid-template-columns: 1fr;
-        }
-    }
-
 }

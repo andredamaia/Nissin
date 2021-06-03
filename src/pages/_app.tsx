@@ -5,9 +5,7 @@ import 'swiper/components/navigation/navigation.scss';
 import '../styles/utils/base.scss';
 import '../styles/utils/button.scss';
 import '../styles/utils/text.scss';
-
-
-
+import '../styles/utils/transition.scss';
 
 import type { AppProps } from 'next/app'
 

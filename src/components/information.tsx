@@ -4,7 +4,7 @@ export default function Information() {
     return (
         <div className={styles.information}>
             <div className="container">
-                <div className="row">
+                <div className="row d-flex align-items-center">
                     <div className={styles.fullContainer}>
                         <div className={styles.areaLightleft}>
 
@@ -28,7 +28,6 @@ export default function Information() {
 
                     <div className={styles.fullContainer}>
                         <div className={styles.areaLightright}>
-
                             <img src="/place.png" alt="" />
                             <p>Endereço
                                 <span>Rua Rui Barbosa, 553 <br/>Costa e Silva</span>

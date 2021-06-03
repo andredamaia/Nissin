@@ -31,20 +31,20 @@ export default function Footer() {
                             <div className={styles.footerProducts}>
                                 <span className={styles.footerSubtitle}>Produtos</span>
 
-                                <a href="#">Cutting Tools</a>
+                                <a href="#" className="transition-line" data-hover-color="dove-gray">Cutting Tools</a>
                                
-                                <a href="#">Management</a>
+                                <a href="#" className="transition-line" data-hover-color="dove-gray">Management</a>
 
-                                <a href="#">Tecnology</a>
+                                <a href="#" className="transition-line" data-hover-color="dove-gray">Tecnology</a>
                             </div>
                         </div>
 
                         <div className="col-12 col-xl-5">
-                            <div className={styles.footerDepartment}>
+                            <div className={`${styles.content}`}>
                                 <span className={styles.footerSubtitle}>Departamentos</span>
 
-                                <div className={styles.content}>
-                                    <div className={styles.leftSide}>
+                                <div className="row">
+                                    <div className="col-12 col-md-6">
                                         <a href="#">Furação</a>
 
                                         <a href="#">Fresamento Insertadas</a>
@@ -54,10 +54,9 @@ export default function Footer() {
                                         <a href="#">Rosqueamento</a>
 
                                         <a href="#">Morsas</a>
-                                    </div> 
+                                    </div>
 
-                                    <div className={styles.rightSide}>
-
+                                    <div className="col-12 col-md-6">
                                         <a href="#">Parafusos Especiais</a>
 
                                         <a href="#">Fresamento Inteiriças</a>

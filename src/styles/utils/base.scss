@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
 
-
 * {
   margin: 0;
   padding: 0;
@@ -8,9 +7,9 @@
 }
 
 :root {
-  --color-title: #192D4E;
-  --color-primary: #90C652;
-  --color-text: #6D6D6D;
+  --color-nile-blue: #192D4E;
+  --color-mantis: #90C652;
+  --color-dove-gray: #6D6D6D;
 
   --title-121: 9.8rem;
   --title-58: 5.8rem;
@@ -21,7 +20,13 @@ html {
   font-size: 62.5%;
 }
 
-body { font-family: 'Montserrat', sans-serif;}
+body { 
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cover {
+  background: #000;
+}
 
 .container {
   max-width: 1080px;
@@ -31,4 +36,21 @@ textarea:focus, input:focus, select:focus {
   box-shadow: 0 0 0 0;
   border: 0 none;
   outline: 0;
-} 
+}
+
+.swiper-container {
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.swiper-button-prev {
+  left: -5px;
+  color: var(--color-mantis);
+  transform: scale(.6)
+}
+
+.swiper-button-next {
+  right: -5px;
+  color: var(--color-mantis);
+  transform: scale(.6)
+}
