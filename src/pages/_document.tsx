@@ -6,7 +6,7 @@ export default class MyDoxument extends Document {
             <Html>
 
                 <Head>
-                    <link rel="shortcut icon" href="/favicon.png" type="image/png"/><link rel="shortcut icon" href="/favicon.png" type="image/png"/>
+                    <link rel="shortcut icon" href="favicon.png" type="image/png" />
                 </Head>
 
                 <body>

@@ -1,7 +1,13 @@
+.internaContainer {
+    height: 25rem;
+    position: relative;   
+}
+
 .bannerInternas {
     background: url('../../../public/banner-internas.jpg') center no-repeat;
     background-size: cover;
-    height: 25rem;
+    height: 0;
+    opacity: 1;
 }
 
 .areaWhite {

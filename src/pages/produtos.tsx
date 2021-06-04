@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import Image from 'next/image'
 import gsap from 'gsap'
 
 import Header from '../components/header';
@@ -95,7 +96,7 @@ export default function Produtos() {
                             <div className={styles.products}>
                                 <div className={styles.productsBox}>
                                     <div className={styles.productsImg}>
-                                        <img src="/produto-1.png" alt="" />
+                                        <Image width="100%" height="90" src="/produto-1.png" alt="" />
                                     </div>
 
                                     <div className={styles.productsDescription}>
@@ -116,7 +117,7 @@ export default function Produtos() {
 
                                 <div className={styles.productsBox}>
                                     <div className={styles.productsImg}>
-                                        <img src="/product-2.png" alt="" />
+                                        <Image width="100%" height="90" src="/product-2.png" alt="" />
                                     </div>
 
                                     <div className={styles.productsDescription}>
@@ -137,7 +138,7 @@ export default function Produtos() {
 
                                 <div className={styles.productsBox}>
                                     <div className={styles.productsImg}>
-                                        <img src="/product-3.png" alt="" />
+                                        <Image width="100%" height="90" src="/product-3.png" alt="" />
                                     </div>
 
                                     <div className={styles.productsDescription}>
@@ -158,7 +159,7 @@ export default function Produtos() {
 
                                 <div className={styles.productsBox}>
                                     <div className={styles.productsImg}>
-                                        <img src="/product-4.png" alt="" />
+                                        <Image width="100%" height="90" src="/product-4.png" alt="" />
                                     </div>
 
                                     <div className={styles.productsDescription}>
@@ -179,7 +180,7 @@ export default function Produtos() {
 
                                 <div className={styles.productsBox}>
                                     <div className={styles.productsImg}>
-                                        <img src="/product-5.png" alt="" />
+                                        <Image width="100%" height="90" src="/product-5.png" alt="" />
                                     </div>
 
                                     <div className={styles.productsDescription}>
