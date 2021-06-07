@@ -12,6 +12,10 @@ h1 {
     }
 }
 
+@media (max-width:768px) {
+    
+}
+
 h2 {
     font-size: var(--title-58);
     color: var(--color-nile-blue);
@@ -33,6 +37,18 @@ h2 {
     }
 }
 
+@media (max-width:768px) {
+    h2 {
+        font-size: 3.5rem;
+        line-height: 5rem;
+        margin-bottom: 5rem; 
+        
+        &:hover {
+            width: 20rem;
+        } 
+    }
+}
+
 h4 {
     font-size: 2.2rem;
     font-weight: 600;
@@ -41,10 +57,26 @@ h4 {
     margin-bottom: 1.6rem;
 }
 
+@media(max-width: 768px) {
+    h4 {
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-bottom: 1.6rem;
+    }
+}
+
 p {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 2.8rem;
     color: #666666;
     margin-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 1.1rem;
+        line-height: 2.3rem;
+        margin-bottom: 1rem;
+    }
 }

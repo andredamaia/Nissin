@@ -142,7 +142,7 @@ export default function Home() {
               </div>
 
               <div className="row">
-                <div className="col-12 col-xl-3">
+                <div className="col-4 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
                       <img src="/ferramenta.jpg" alt="" />
@@ -154,7 +154,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="col-12 col-xl-3">
+                <div className="col-4 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
                       <img src="/ferramenta.jpg" alt="" />
@@ -166,7 +166,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="col-12 col-xl-3">
+                <div className="col-4 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
                       <img src="/ferramenta.jpg" alt="" />
@@ -178,7 +178,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="col-12 col-xl-3">
+                <div className="col-4 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
                       <img src="/ferramenta.jpg" alt="" />
@@ -190,7 +190,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="col-12 col-xl-3">
+                <div className="col-4 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
                       <img src="/ferramenta.jpg" alt="" />
@@ -203,7 +203,7 @@ export default function Home() {
                 </div>
 
 
-                <div className="col-12 col-xl-3">
+                <div className="col-4 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
                       <img src="/ferramenta.jpg" alt="" />
@@ -215,7 +215,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="col-12 col-xl-3">
+                <div className="col-4 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
                       <img src="/ferramenta.jpg" alt="" />
@@ -227,7 +227,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="col-12 col-xl-3">
+                <div className="col-4 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
                       <img src="/ferramenta.jpg" alt="" />
@@ -239,7 +239,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="col-12 col-xl-3">
+                <div className="col-4 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
                       <img src="/ferramenta.jpg" alt="" />
@@ -251,7 +251,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="col-12 col-xl-3">
+                <div className="col-4 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
                       <img src="/ferramenta.jpg" alt="" />
