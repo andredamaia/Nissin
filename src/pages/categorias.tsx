@@ -77,65 +77,29 @@ export default function Categoria() {
                                     </a>
                                 </Link>
 
-                                <a href="#">
-                                    <div className={styles.toolsImg}>
-                                        <img src="/faceamento-img.png" alt="" />
-                                    </div>
+                                <Link href="/produtos/torneamento">
+                                    <a>
+                                        <div className={styles.toolsImg}>
+                                            <img src="/torneamento.jpg" alt="" />
+                                        </div>
 
-                                    <div className={styles.toolsName}>
-                                        Faceamento
-                                    </div>
-                                </a>
+                                        <div className={styles.toolsName}>
+                                            Torneamento
+                                        </div>
+                                    </a>
+                                </Link>
 
-                                <a href="#">
-                                    <div className={styles.toolsImg}>
-                                        <img src="/contorno-img.png" alt="" />
-                                    </div>
+                                <Link href="/produtos/furacao">
+                                    <a>
+                                        <div className={styles.toolsImg}>
+                                            <img src="/furacao.jpg" alt="" />
+                                        </div>
 
-                                    <div className={styles.toolsName}>
-                                        Contorno
-                                    </div>
-                                </a>
-
-                                <a href="#">
-                                    <div className={styles.toolsImg}>
-                                        <img src="/redondo-img.png" alt="" />
-                                    </div>
-
-                                    <div className={styles.toolsName}>
-                                        Redondo
-                                    </div>
-                                </a>
-
-                                <a href="#">
-                                    <div className={styles.toolsImg}>
-                                        <img src="/copia-img.png" alt="" />
-                                    </div>
-
-                                    <div className={styles.toolsName}>
-                                        Copia
-                                    </div>
-                                </a>
-
-                                <a href="#">
-                                    <div className={styles.toolsImg}>
-                                        <img src="/chaves-img.png" alt="" />
-                                    </div>
-
-                                    <div className={styles.toolsName}>
-                                        Chaves
-                                    </div>
-                                </a>
-
-                                <a href="#">
-                                    <div className={styles.toolsImg}>
-                                        <img src="/geral-img.png" alt="" />
-                                    </div>
-
-                                    <div className={styles.toolsName}>
-                                        Geral
-                                    </div>
-                                </a>
+                                        <div className={styles.toolsName}>
+                                            Furação
+                                        </div>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
 

@@ -1,6 +1,5 @@
 import { GetStaticProps } from 'next';
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import { useEffect } from 'react';
 import gsap from 'gsap'
 import { api } from '../../services/api'
@@ -13,7 +12,6 @@ import Footer from '../../components/footer'
 import styles from '../../styles/pages/produtos.module.scss'
 
 export default function Produtos({ data }: any) {
-    const router = useRouter()
     const tools = [...data];
 
     const altoAvanco = tools.filter((tool: any) => tool.categories.includes(5))
@@ -70,7 +68,6 @@ export default function Produtos({ data }: any) {
 
                         <div className="col-12">
                             <div className={styles.pageIndication}>
-                                
                                 <Link href="/">
                                     <a>Home</a>
                                 </Link>
@@ -84,7 +81,6 @@ export default function Produtos({ data }: any) {
                                 <span>/</span>
 
                                 <a href="#">Fresamento</a>
-
                             </div>
                         </div>
 
@@ -362,6 +358,6 @@ export const getStaticProps: GetStaticProps = async () => {
         props: {
             data
         },
-        revalidate: 60 * 60* 8,
+        revalidate: 60 * 60 * 8,
     }
 }

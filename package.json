@@ -8,10 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@barba/core": "^2.9.7",
     "axios": "^0.21.1",
     "bootstrap": "^5.0.1",
     "font-awesome": "^4.7.0",
-    "gsap": "^3.6.1",
+    "gsap": "^3.7.0",
     "i": "^0.3.6",
     "next": "10.2.2",
     "next-compose-plugins": "^2.2.1",

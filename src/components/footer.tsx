@@ -33,7 +33,7 @@ export default function Footer() {
                             <div className={styles.footerProducts}>
                                 <span className={styles.footerSubtitle}>Produtos</span>
 
-                                <Link href="#">
+                                <Link href="/categorias">
                                     <a className="transition-line" data-hover-color="dove-gray">Cutting Tools</a>
                                 </Link>
                                
