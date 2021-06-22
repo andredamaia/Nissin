@@ -8,7 +8,7 @@ export default function Header () {
         <div className="container-fluid">
           <div className="row">
             <div className="col-12  col-md-4 col-xl-4">
-              <Link href="/"><a><img src="logo.png" alt="Nissin solutions" /></a></Link>
+              <Link href="/"><a><img src="/logo.png" alt="Nissin solutions" /></a></Link>
             </div> 
 
             <div className="col-12 col-md-8 col-xl-8">
@@ -38,7 +38,7 @@ export default function Header () {
 
                   <Link href="/sobre"><a>Sobre <div className={styles.line}></div></a></Link>
 
-                  <Link href="/produtos"><a>Produtos <div className={styles.line}></div></a></Link>
+                  <Link href="/categorias"><a>Produtos <div className={styles.line}></div></a></Link>
 
                   <Link href="/contato"><a>Contato <div className={styles.line}></div></a></Link>
                 </div>

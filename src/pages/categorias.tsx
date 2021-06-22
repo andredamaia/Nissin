@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useEffect } from 'react';
 import gsap from 'gsap'
 
@@ -6,7 +7,7 @@ import Suporte from '../components/suporte';
 import Information from '../components/information';
 import Footer from '../components/footer';
 
-import styles from '../styles/pages/categoria.module.scss';
+import styles from '../styles/pages/categorias.module.scss';
 
 export default function Categoria() {
     useEffect(() => {
@@ -64,16 +65,17 @@ export default function Categoria() {
                             </div>
 
                             <div className={styles.boxTools}>
-                        
-                                <a href="#">
-                                    <div className={styles.toolsImg}>
-                                        <img src="/fresamento-img.png" alt="" />
-                                    </div>
+                                <Link href="/produtos/fresamento">
+                                    <a>
+                                        <div className={styles.toolsImg}>
+                                            <img src="/fresamento-img.png" alt="" />
+                                        </div>
 
-                                    <div className={styles.toolsName}>
-                                        Fresamento
-                                    </div>
-                                </a>
+                                        <div className={styles.toolsName}>
+                                            Fresamento
+                                        </div>
+                                    </a>
+                                </Link>
 
                                 <a href="#">
                                     <div className={styles.toolsImg}>
@@ -141,7 +143,6 @@ export default function Categoria() {
                     </div>
                 </div>
             </div>
-
 
             <Information />
 
