@@ -43,6 +43,10 @@
         padding: 0 1px;
         height: 40rem;
 
+        @media(max-width: 768px){
+            height: 20rem;
+        } 
+
         .titleBanner {
             h1 {
                 font-size: 4rem;
@@ -75,6 +79,10 @@
         gap: 30px;
         margin-bottom: 12rem;
 
+        @media (max-width: 768px) {
+            margin-bottom: 0;
+        }
+
         .produtosImg {
             width: 82px;
             height: 82px;
@@ -94,6 +102,10 @@
                 line-height: 2.4rem;
                 color: var(--text);
                 padding-bottom: 3rem;
+
+                @media (max-width: 768px) {
+                    font-size: 1.4rem;
+                }
             }
         }
     } 
@@ -117,7 +129,6 @@
 
         .boxProdutos{
             grid-template-columns: 1fr;
-            margin-bottom: 5rem;
 
             .produtosImg {
                 margin-bottom: 2rem;

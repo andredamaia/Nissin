@@ -1,6 +1,10 @@
 .internaContainer {
     height: 25rem;
-    position: relative;   
+    position: relative;  
+    
+    @media (max-width: 768px){
+        height: 100px !important;
+    }
 }
 
 .bannerInternas {
@@ -8,10 +12,18 @@
     background-size: cover;
     height: 0;
     opacity: 1;
+
+    @media (max-width: 768px){
+        height: 100px !important;
+    }
 }
 
 .areaWhite {
     padding: 9.5rem 0;
+
+    @media (max-width: 768px){
+        padding: 2rem  0;
+    }
 
     .pageIndication {
         display: flex;
@@ -51,6 +63,12 @@
         gap: 5rem;
         margin-bottom: 6rem;
 
+        @media (max-width: 768px){
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
         a {
             display: flex;
             flex-direction: column;
@@ -64,6 +82,12 @@
             img {
                 max-width: 90%;
                 margin-bottom: 3rem;
+
+                @media (max-width: 768px){
+                    max-width: 60%;
+                    margin: 0 auto 3rem;
+                    display: block;
+                }
             }
 
             .toolsName {
@@ -71,6 +95,10 @@
                 color: var(--color-nile-blue);
                 font-weight: 600;
                 line-height: 2.4rem;
+
+                @media (max-width: 768px){
+                    font-size: 1.6rem;
+                }
             }
 
             &:hover {

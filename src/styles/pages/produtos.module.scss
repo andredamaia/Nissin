@@ -1,6 +1,10 @@
 .internaContainer {
     height: 25rem;
-    position: relative;   
+    position: relative;  
+    
+    @media (max-width: 768px){
+        height: 100px !important;
+    }
 }
 
 .bannerInternas {
@@ -8,10 +12,22 @@
     background-size: cover;
     height: 0;
     opacity: 1;
+
+    @media (max-width: 768px){
+        height: 100px !important;
+    }
 }
 
 .areaWhite {
     padding: 9.5rem 0;
+
+    @media (max-width: 768px){
+        padding: 3rem 0;
+    }
+
+    @media (max-width: 768px){
+        padding: 2rem  0;
+    }
 
     .pageIndication {
         display: flex;
@@ -21,6 +37,10 @@
         padding-bottom: 2.4rem;
         margin-bottom: 6.4rem;
 
+        @media (max-width: 768px){
+            margin-bottom: 3rem;
+        }
+
         a {
             margin-bottom: 0;
             font-size: 1.6rem;
@@ -29,6 +49,10 @@
             line-height: 2.4rem;
             text-decoration: none;
             display: inline-block;
+
+            @media (max-width: 768px){
+                font-size: 1.4rem;
+            }
 
             &:last-child {
                 color: #192D4E;
@@ -42,6 +66,10 @@
             color: #B0B0B0;
             line-height: 2.4rem;
             margin: 0 2.1rem;
+
+            @media (max-width: 768px){
+                margin: 0 1rem;
+            }
         }
     }
 
@@ -87,6 +115,11 @@
         gap: 60px;
         padding: 0 0 10rem;
 
+        @media (max-width: 768px){
+            grid-template-columns: 1fr;
+            padding-bottom: 3rem;
+        }
+
         .productsBox {
             display: flex;
             flex-direction: row;
@@ -105,8 +138,6 @@
                 bottom: 0;
                 background: #90C652;
             }
-
-
 
             .productsImg {
                 height: 76px;
@@ -131,6 +162,10 @@
                     line-height: 2.4rem;
                     color: var(--color-nile-blue);
                     margin-bottom: 1.5rem;
+
+                    @media (max-width: 768px){
+                        font-size: 1.6rem;
+                    }
                 }
 
                 a {

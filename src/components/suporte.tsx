@@ -1,4 +1,6 @@
-import styles from '../styles/components/suporte.module.scss';
+import Link from 'next/link'
+
+import styles from '../styles/components/suporte.module.scss'
 
 export default function Suporte() {
     return (
@@ -61,12 +63,14 @@ export default function Suporte() {
                             <h4>Cutting Tools</h4>
                         </div>
 
-                        <a href="#" className="buttonPrimary">
-                            Ver Produtos
-                        </a>
+                        <Link href="/categorias">
+                            <a className="buttonPrimary">
+                                Ver Produtos
+                            </a>
+                        </Link>
                     </div>
 
-                    <div className={styles.box}>
+                    <div className={styles.box} style={{ opacity: .4 }}>
                         <div className={styles.produtosImg}>
                             <img src="/object-2.png" alt="" />
                         </div>
@@ -76,11 +80,11 @@ export default function Suporte() {
                         </div>
 
                         <a href="#" className="buttonPrimary">
-                            Ver Produtos
+                            Em breve
                         </a>
                     </div>
 
-                    <div className={styles.box}>
+                    <div className={styles.box} style={{ opacity: .4 }}>
                         <div className={styles.produtosImg}>
                             <img src="/object-3.png" alt="" />
                         </div>
@@ -90,7 +94,7 @@ export default function Suporte() {
                         </div>
 
                         <a href="#" className="buttonPrimary">
-                            Ver Produtos
+                            Em breve
                         </a>
                     </div>
                 </div> 

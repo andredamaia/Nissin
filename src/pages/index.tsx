@@ -69,7 +69,7 @@ export default function Home() {
                   </Link>
                 </div>
 
-                <div className={styles.box}>
+                <div className={styles.box} style={{ opacity: .4 }}>
                   <div className={styles.produtosImg}>
                     <img src="/object-2.png" alt="" />
                   </div>
@@ -81,11 +81,11 @@ export default function Home() {
                   </div>
 
                   <a href="#" className="buttonPrimary">
-                    Ver Produtos
+                    Em breve
                   </a>
                 </div>
 
-                <div className={styles.box}>
+                <div className={styles.box} style={{ opacity: .4 }}>
                   <div className={styles.produtosImg}>
                     <img src="/object-3.png" alt="" />
                   </div>
@@ -97,7 +97,7 @@ export default function Home() {
                   </div>
 
                   <a href="#" className="buttonPrimary">
-                    Ver Produtos
+                    Em breve
                   </a>
                 </div>
               </div> 
@@ -282,9 +282,11 @@ export default function Home() {
               <p>Contamos com experiência e know-how na área provenientes de uma forte atuação no mercado de ferramentas há mais de 10 anos. Nossa estrutura de atendimento interno e externo foi desenhada para acompanhar a qualidade das marcas que distribuímos, de modo a agregar um atendimento completamente personalizado e único.</p>
 
               <div>
-                <a href="#" className="buttonPrimary">
-                  Conheça Mais
-                </a>
+                <Link href="/sobre">
+                  <a className="buttonPrimary">
+                    Conheça Mais
+                  </a>
+                </Link>
               </div>           
             </div>
           </div>
