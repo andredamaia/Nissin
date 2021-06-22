@@ -13,7 +13,12 @@ h1 {
 }
 
 @media (max-width:768px) {
-    
+    h1 {
+        font-size: 3.5rem;
+        line-height: 3.6rem;
+        margin-top: -3.3rem;
+        margin-bottom: 2.5rem;
+    }
 }
 
 h2 {
@@ -39,9 +44,9 @@ h2 {
 
 @media (max-width:768px) {
     h2 {
-        font-size: 3.5rem;
-        line-height: 5rem;
-        margin-bottom: 5rem; 
+        font-size: 3rem;
+        line-height: 4.5rem;
+        margin-bottom: 2.5rem; 
         
         &:hover {
             width: 20rem;
@@ -77,6 +82,6 @@ p {
     p {
         font-size: 1.1rem;
         line-height: 2.3rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.6rem;
     }
 }

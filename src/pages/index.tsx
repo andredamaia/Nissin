@@ -125,7 +125,7 @@ export default function Home() {
       <div className={styles.halfColor}>
         <div className="container">
           <div className="row">
-            <div className="col-12 col-xl-6">
+            <div className="col-12 col-md-6 col-xl-6">
                 <p className={styles.textTitle}>
                   380+
                   <span className={styles.textSubtitle}>Ferramentas disponíveis</span>
@@ -136,13 +136,13 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="col-12 col-xl-6">
+            <div className="col-12 col-md-6 col-xl-6">
               <div className={styles.management}>
                 <img src="/management.png" alt="" />
               </div>
 
               <div className="row">
-                <div className="col-4 col-xl-3">
+                <div className="col-4 col-md-3 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
                       <img src="/ferramenta.jpg" alt="" />
@@ -154,7 +154,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="col-4 col-xl-3">
+                <div className="col-4 col-md-3 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
                       <img src="/ferramenta.jpg" alt="" />
@@ -166,7 +166,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="col-4 col-xl-3">
+                <div className="col-4 col-md-3 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
                       <img src="/ferramenta.jpg" alt="" />
@@ -178,7 +178,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="col-4 col-xl-3">
+                <div className="col-4 col-md-3 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
                       <img src="/ferramenta.jpg" alt="" />
@@ -190,7 +190,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="col-4 col-xl-3">
+                <div className="col-4 col-md-3 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
                       <img src="/ferramenta.jpg" alt="" />
@@ -203,7 +203,7 @@ export default function Home() {
                 </div>
 
 
-                <div className="col-4 col-xl-3">
+                <div className="col-4 col-md-3 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
                       <img src="/ferramenta.jpg" alt="" />
@@ -215,7 +215,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="col-4 col-xl-3">
+                <div className="col-4 col-md-3 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
                       <img src="/ferramenta.jpg" alt="" />
@@ -227,7 +227,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="col-4 col-xl-3">
+                <div className="col-4 col-md-3 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
                       <img src="/ferramenta.jpg" alt="" />
@@ -239,7 +239,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="col-4 col-xl-3">
+                <div className="col-4 col-md-3 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
                       <img src="/ferramenta.jpg" alt="" />
@@ -251,7 +251,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="col-4 col-xl-3">
+                <div className="col-4 col-md-3 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
                       <img src="/ferramenta.jpg" alt="" />
@@ -293,7 +293,7 @@ export default function Home() {
       <div className={`${styles.areaWhite} ${styles.aboutNissin}`}>
         <div className="container">
           <div className="row">
-            <div className="col-12 col-xl-8">
+            <div className="col-12 col-md-8 col-xl-8">
               <h2>Sobre a Nissin</h2>
 
               <p>A Nissin Solutions Ltda, sediada em Joinville/SC, é distribuidora especialista em ferramentas de usinagem para as regiões de Santa Catarina e Paraná, trabalhando com marcas reconhecidas internacionalmente por fabricarem produtos de alto rendimento e excelente competitividade global.</p>

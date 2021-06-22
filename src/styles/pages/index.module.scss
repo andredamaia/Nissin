@@ -36,17 +36,10 @@
 @media (max-width: 768px) {
         
     .bannerContent {
-        padding: 0 1px;
-        height: 40rem;
+        padding: 0 2rem;
+        height: 30rem;
 
         .titleBanner {
-            h1 {
-                font-size: 4rem;
-                line-height: 3.6rem;
-                margin-top: -3.3rem;
-                margin-bottom: 6rem;
-            }
-
             a {
                 font-size: 2.7rem;
                 line-height: 3.5rem;
@@ -54,10 +47,10 @@
         }
 
         .textEnd {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             line-height: 2.8rem;
-            bottom: 50px;
-            left: 10px;
+            bottom: 30px;
+            left: 30px;
         }
     }
 }
@@ -114,12 +107,22 @@
         .boxProdutos{
             grid-template-columns: 1fr;
             margin-bottom: 5rem;
+            text-align: center;
 
             .produtosImg {
-                margin-bottom: 2rem;
+                margin-bottom: 1.6rem;
+                width: auto;
+                height: auto;
 
                 img {
-                    width: 80%;
+                    width: 20%;
+                }
+            }
+
+            .produtosTitle {
+
+                p {
+                    padding-bottom: 0;
                 }
             }
         }
@@ -219,18 +222,45 @@
 
     .halfColor {
 
-        padding: 4rem 0;
+        padding: 3rem 2rem;
 
         .textTitle {
             font-size: 7rem;
             line-height: 5rem;
-            margin-top: 2rem;
-            padding: 0 2rem;
+            margin-top: 0;
+            padding: 0;
 
             span {
                 font-size: 2.2rem;
                 line-height: 2rem;
                 margin: 1.5rem 0;
+            }
+        }
+
+        .description {
+            
+            p {
+                padding-right: 0;
+                margin-bottom: 0;
+                font-size: 1.3rem;
+            }
+        }
+
+        .management {
+             
+            img { 
+                margin: 2rem 0;
+                width: 100%;
+            }
+
+        }
+
+        .boxManagement {
+
+            .boxSubtitle {
+                span {
+                    font-size: 1rem;
+                }
             }
         }
 
@@ -251,11 +281,26 @@
     }
 }
 
+@media (max-width: 769px) {
+    .imagesTools {
+        padding: 0 0 2rem;
+    }
+}
+
+
 .aboutNissin {
     background: url('../../../public/bg-nissin.jpg') center no-repeat;
     background-size: cover;
 
     h2 {
         margin-bottom: 5rem;
+    }
+}
+
+@media (max-width:768px) {
+    .aboutNissin {
+        h2 {
+            margin-bottom: 2.5rem;
+        }
     }
 }

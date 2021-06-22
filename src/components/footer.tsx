@@ -45,25 +45,25 @@ export default function Footer() {
 
                                 <div className="row">
                                     <div className="col-12 col-md-6">
-                                        <a href="#">Furação</a>
+                                        <span>Furação</span>
 
-                                        <a href="#">Fresamento Insertadas</a>
+                                        <span>Fresamento Insertadas</span>
 
-                                        <a href="#">Acessórios</a>
+                                        <span>Acessórios</span>
 
-                                        <a href="#">Rosqueamento</a>
+                                        <span>Rosqueamento</span>
 
-                                        <a href="#">Morsas</a>
+                                        <span>Morsas</span>
                                     </div>
 
                                     <div className="col-12 col-md-6">
-                                        <a href="#">Parafusos Especiais</a>
+                                        <span>Parafusos Especiais</span>
 
-                                        <a href="#">Fresamento Inteiriças</a>
+                                        <span>Fresamento Inteiriças</span>
 
-                                        <a href="#">Cones de Fixação</a>
+                                        <span>Cones de Fixação</span>
 
-                                        <a href="#">Furação</a>
+                                        <span>Furação</span>
                                     </div>
                                 </div>
                             </div>

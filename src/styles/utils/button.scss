@@ -22,3 +22,9 @@
         color: #ffffff;
     }
 }
+
+@media (max-width: 768px) {
+    .buttonPrimary {
+        width: 100%;
+    }
+}

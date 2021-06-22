@@ -113,3 +113,46 @@
         width: 33.3%;
     }
 }
+
+@media (max-width:768px) {
+    .information {
+
+        .areaLightleft {
+            padding: 3rem;
+
+            p {
+                span {
+                    font-size: 1.3rem;
+                    line-height: 1.7rem;
+                }
+            }
+        }
+
+        .areaDarkBlue {
+            padding: 3rem;
+            justify-content: flex-start;
+
+            p {
+                span {
+                    font-size: 1.3rem;
+                    line-height: 1.7rem;
+                }
+            }
+        }
+
+        .areaLightright {
+            padding: 3rem;
+
+            p {
+                span {
+                    font-size: 1.3rem;
+                    line-height: 1.7rem;
+                }
+            }
+        }
+        
+        .fullContainer {
+            width: 100%;
+        }   
+    }
+}

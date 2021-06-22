@@ -7,11 +7,11 @@ export default function Header () {
       <header className={styles.header}>
         <div className="container-fluid">
           <div className="row">
-            <div className="col-12  col-md-4 col-xl-4">
+            <div className="col-6 col-md-4 col-xl-4">
               <Link href="/"><a><img src="logo.png" alt="Nissin solutions" /></a></Link>
             </div> 
 
-            <div className="col-12 col-md-8 col-xl-8">
+            <div className="col-12 col-md-8 col-xl-8 d-none d-md-block">
               <div className={styles.menu}>
                 <div className={styles.submenuInfos}>
                   <div className={styles.infos}>
