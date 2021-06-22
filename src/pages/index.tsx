@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link'
 import SwiperCore, { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -14,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Nissin</title>
+        <title>Nissin Solutions</title>
       </Head>
 
       <Header />
@@ -26,9 +27,11 @@ export default function Home() {
               <div className={styles.titleBanner}>
                 <h1><span>especialista</span> <br/>em ferramentas <br/>de usinagem</h1>
 
-                <a href="#" className="transition-line" data-hover-color="mantis">
-                  Conheça nossos produtos <img src="/arrow-right.png" alt="" />
-                </a>
+                <Link href="/categorias">
+                  <a className="transition-line" data-hover-color="mantis">
+                    Conheça nossos produtos <img src="/arrow-right.png" alt="" />
+                  </a>
+                </Link>
               </div>
             </div>
 
@@ -59,9 +62,11 @@ export default function Home() {
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in tincidunt neque. Donec efficitur lorem non felis laoreet iaculis.</p>
                   </div>
 
-                  <a href="#" className="buttonPrimary">
-                    Ver Produtos
-                  </a>
+                  <Link href="/categorias">
+                    <a className="buttonPrimary">
+                      Ver Produtos
+                    </a>
+                  </Link>
                 </div>
 
                 <div className={styles.box}>
@@ -138,14 +143,38 @@ export default function Home() {
 
             <div className="col-12 col-md-6 col-xl-6">
               <div className={styles.management}>
-                <img src="/management.png" alt="" />
+                <img src="./management.png" alt="" />
               </div>
 
               <div className="row">
                 <div className="col-4 col-md-3 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
-                      <img src="/ferramenta.jpg" alt="" />
+                      <img src="./icon-fresamento.jpg" alt="" />
+                    </div>
+
+                    <div className={styles.boxSubtitle}>
+                      <span>Fresamento</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-4 col-md-3 col-xl-3">
+                  <div className={styles.boxManagement}>
+                    <div className={styles.imgCircle}>
+                      <img src="./icon-torneamento.jpg" alt="" />
+                    </div>
+
+                    <div className={styles.boxSubtitle}>
+                      <span>Torneamento</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-4 col-md-3 col-xl-3">
+                  <div className={styles.boxManagement}>
+                    <div className={styles.imgCircle}>
+                      <img src="./icon-furacao.jpg" alt="" />
                     </div>
 
                     <div className={styles.boxSubtitle}>
@@ -157,31 +186,7 @@ export default function Home() {
                 <div className="col-4 col-md-3 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
-                      <img src="/ferramenta.jpg" alt="" />
-                    </div>
-
-                    <div className={styles.boxSubtitle}>
-                      <span>Insertos</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-4 col-md-3 col-xl-3">
-                  <div className={styles.boxManagement}>
-                    <div className={styles.imgCircle}>
-                      <img src="/ferramenta.jpg" alt="" />
-                    </div>
-
-                    <div className={styles.boxSubtitle}>
-                      <span>Acessórios</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-4 col-md-3 col-xl-3">
-                  <div className={styles.boxManagement}>
-                    <div className={styles.imgCircle}>
-                      <img src="/ferramenta.jpg" alt="" />
+                      <img src="./icon-rosqueamento.jpg" alt="" />
                     </div>
 
                     <div className={styles.boxSubtitle}>
@@ -193,11 +198,11 @@ export default function Home() {
                 <div className="col-4 col-md-3 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
-                      <img src="/ferramenta.jpg" alt="" />
+                      <img src="./icon-cones-e-acessorios.jpg" alt="" />
                     </div>
 
                     <div className={styles.boxSubtitle}>
-                      <span>Fresas</span>
+                      <span>Cones e Acessórios</span>
                     </div>
                   </div>
                 </div>
@@ -206,11 +211,11 @@ export default function Home() {
                 <div className="col-4 col-md-3 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
-                      <img src="/ferramenta.jpg" alt="" />
+                      <img src="./icon-zero-point.jpg" alt="" />
                     </div>
 
                     <div className={styles.boxSubtitle}>
-                      <span>Cones</span>
+                      <span>Zero Point</span>
                     </div>
                   </div>
                 </div>
@@ -218,11 +223,11 @@ export default function Home() {
                 <div className="col-4 col-md-3 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
-                      <img src="/ferramenta.jpg" alt="" />
+                      <img src="./icon-gerenciamento-de-ferramentas.jpg" alt="" />
                     </div>
 
                     <div className={styles.boxSubtitle}>
-                      <span>Gerenciamento de ferramentas</span>
+                      <span>Gerenciamento de Ferramentas</span>
                     </div>
                   </div>
                 </div>
@@ -230,35 +235,11 @@ export default function Home() {
                 <div className="col-4 col-md-3 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
-                      <img src="/ferramenta.jpg" alt="" />
+                      <img src="./icon-preset.jpg" alt="" />
                     </div>
 
                     <div className={styles.boxSubtitle}>
                       <span>Preset</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-4 col-md-3 col-xl-3">
-                  <div className={styles.boxManagement}>
-                    <div className={styles.imgCircle}>
-                      <img src="/ferramenta.jpg" alt="" />
-                    </div>
-
-                    <div className={styles.boxSubtitle}>
-                      <span>Zero point</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-4 col-md-3 col-xl-3">
-                  <div className={styles.boxManagement}>
-                    <div className={styles.imgCircle}>
-                      <img src="/ferramenta.jpg" alt="" />
-                    </div>
-
-                    <div className={styles.boxSubtitle}>
-                      <span>Management</span>
                     </div>
                   </div>
                 </div>

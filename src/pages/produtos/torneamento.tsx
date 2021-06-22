@@ -1,20 +1,20 @@
 import { GetStaticProps } from 'next';
-import { useRouter } from 'next/router'
+import Link from 'next/link'
 import { useEffect } from 'react';
 import gsap from 'gsap'
-import { api } from '../services/api'
+import { api } from '../../services/api'
 
-import Header from '../components/header';
-import Suporte from '../components/suporte';
-import Information from '../components/information';
-import Footer from '../components/footer';
+import Header from '../../components/header'
+import Suporte from '../../components/suporte'
+import Information from '../../components/information'
+import Footer from '../../components/footer'
 
-import styles from '../styles/pages/produtos.module.scss';
-
+import styles from '../../styles/pages/produtos.module.scss'
 
 export default function Produtos({ data }: any) {
-    const router = useRouter()
     const tools = [...data];
+
+    const torneamento = tools.filter((tool: any) => tool.categories.includes(13))
 
     useEffect(() => {
         gsap.to('.animate', {
@@ -61,42 +61,27 @@ export default function Produtos({ data }: any) {
                     <div className="row">
 
                         <div className="col-12">
-                            <div className={styles.pageIndication}>
-                                
-                                <a href="/">Home</a>
+                            <div className={styles.pageIndication}>  
+                                <Link href="/">
+                                    <a>Home</a>
+                                </Link>
 
                                 <span>/</span>
 
-                                <a href="#">Cutting Tools</a>
+                                <Link href="/categorias">
+                                    <a>Cutting Tools</a>
+                                </Link>
 
                                 <span>/</span>
 
-                                <a href="#">Faceamento</a>
-
+                                <a href="#">Torneamento</a>
                             </div>
                         </div>
 
-                        <div className="col-12 col-xl-4">
-                            <div className={styles.sidebar}>
-                                <p>Cutting tools</p>
-
-                                <ul>
-                                    <li>Fresamento</li>
-                                    <li>Faceamento</li>
-                                    <li>Contorno</li>
-                                    <li>Redondo</li>
-                                    <li>Copia</li>
-                                    <li>Chaves</li>
-                                    <li>Geral</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className="col-12 col-xl-8">
+                        <div className="col-12">
                             <div className={styles.products}>
-
-                                {tools.map(tool =>(
-                                    <div className={styles.productsBox}>
+                                {torneamento.map(tool =>(
+                                    <div className={styles.productsBox} key={tool.id}>
                                         <div className={styles.productsImg}>
                                             <img 
                                                 width="100%" 
@@ -138,7 +123,7 @@ export default function Produtos({ data }: any) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-    const { data } = await api.get('tools?_embed',  {
+    const { data } = await api.get('tools?per_page=90&_embed',  {
         params: {
             _limit: 12,
             _order: 'desc'
@@ -149,6 +134,6 @@ export const getStaticProps: GetStaticProps = async () => {
         props: {
             data
         },
-        revalidate: 60 * 60* 8,
+        revalidate: 60 * 60 * 8,
     }
 }

@@ -1,4 +1,6 @@
-import styles from '../styles/components/footer.module.scss';
+import Link from 'next/link'
+
+import styles from '../styles/components/footer.module.scss'
 
 export default function Footer() {
     return (
@@ -31,7 +33,9 @@ export default function Footer() {
                             <div className={styles.footerProducts}>
                                 <span className={styles.footerSubtitle}>Produtos</span>
 
-                                <a href="#" className="transition-line" data-hover-color="dove-gray">Cutting Tools</a>
+                                <Link href="/categorias">
+                                    <a className="transition-line" data-hover-color="dove-gray">Cutting Tools</a>
+                                </Link>
                                
                                 <a href="#" className="transition-line" data-hover-color="dove-gray">Management</a>
 
