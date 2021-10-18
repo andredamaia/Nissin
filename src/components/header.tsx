@@ -64,7 +64,7 @@ export default function Header () {
       <div className="container-fluid">
         <div className="row">
           <div className="col-6 col-md-4 col-xl-4">
-            <Link href="/"><a><img src="/logo.png" alt="Nissin solutions" /></a></Link>
+            <Link href="/"><a><img src="/logo.jpg" style={{ width: 180, mixBlendMode: 'multiply' }} alt="Nissin solutions" /></a></Link>
           </div>
 
           <div className="col-12 col-md-8 col-xl-8 d-none d-md-block">
@@ -73,7 +73,7 @@ export default function Header () {
                 <div className={styles.infos}>
                   <a href="mailto:contato@nissinsolutions.com.br">
                       <img src="/email.png" alt="" />
-                      contato@nissinsolutions.com.br
+                      nissin@nissinsolutions.com.br
                   </a>
                 </div>
 
@@ -91,9 +91,11 @@ export default function Header () {
               <div className={styles.menuList}>
                 <Link href="/"><a>Home <div className={styles.line}></div></a></Link>
 
+                <Link href="/categorias"><a>Produtos <div className={styles.line}></div></a></Link>
+
                 <Link href="/sobre"><a>Sobre <div className={styles.line}></div></a></Link>
 
-                <Link href="/categorias"><a>Produtos <div className={styles.line}></div></a></Link>
+                <Link href="/parceiros"><a>Parceiros <div className={styles.line}></div></a></Link>
 
                 <Link href="/contato"><a>Contato <div className={styles.line}></div></a></Link>
               </div>
@@ -116,8 +118,9 @@ export default function Header () {
 
       <div className={`${styles.mobileMenu} mobileMenu`}>
         <Link href="/"><a>Home <div className={styles.line}></div></a></Link>
-        <Link href="/sobre"><a>Sobre <div className={styles.line}></div></a></Link>
         <Link href="/categorias"><a>Produtos <div className={styles.line}></div></a></Link>
+        <Link href="/sobre"><a>Sobre <div className={styles.line}></div></a></Link>
+        <Link href="/parceiros"><a>Parceiros <div className={styles.line}></div></a></Link>
         <Link href="/contato"><a>Contato <div className={styles.line}></div></a></Link>
       </div> 
     </header> 

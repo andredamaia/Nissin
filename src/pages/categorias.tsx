@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Link from 'next/link'
 import { useEffect } from 'react';
 import gsap from 'gsap'
@@ -31,6 +32,10 @@ export default function Categoria() {
 
     return (
         <>
+            <Head>
+                <title>Categorias - Nissin Solutions</title>
+            </Head>
+
             <Header />
 
             <div className={styles.internaContainer}>
@@ -68,7 +73,7 @@ export default function Categoria() {
                                 <Link href="/produtos/fresamento">
                                     <a>
                                         <div className={styles.toolsImg}>
-                                            <img src="/fresamento-img.png" alt="" />
+                                            <img src="/fresamento-thumb.jpg" alt="" />
                                         </div>
 
                                         <div className={styles.toolsName}>
@@ -80,7 +85,7 @@ export default function Categoria() {
                                 <Link href="/produtos/torneamento">
                                     <a>
                                         <div className={styles.toolsImg}>
-                                            <img src="/torneamento.jpg" alt="" />
+                                            <img src="/torneamento-thumb.jpg" alt="" />
                                         </div>
 
                                         <div className={styles.toolsName}>
@@ -92,7 +97,7 @@ export default function Categoria() {
                                 <Link href="/produtos/furacao">
                                     <a>
                                         <div className={styles.toolsImg}>
-                                            <img src="/furacao.jpg" alt="" />
+                                            <img src="/furacao-thumb.jpg" alt="" />
                                         </div>
 
                                         <div className={styles.toolsName}>
@@ -100,10 +105,32 @@ export default function Categoria() {
                                         </div>
                                     </a>
                                 </Link>
+
+                                <Link href="/produtos/rosqueamento">
+                                    <a>
+                                        <div className={styles.toolsImg}>
+                                            <img src="/rosqueamento-thumb.jpg" alt="" />
+                                        </div>
+
+                                        <div className={styles.toolsName}>
+                                            Rosqueamento
+                                        </div>
+                                    </a>
+                                </Link>
+
+                                <Link href="/produtos/fixacao">
+                                    <a>
+                                        <div className={styles.toolsImg}>
+                                            <img src="/fixacao-thumb.jpg" alt="" />
+                                        </div>
+
+                                        <div className={styles.toolsName}>
+                                            Fixação
+                                        </div>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
-
-                        <Suporte />
                     </div>
                 </div>
             </div>

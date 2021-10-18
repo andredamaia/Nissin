@@ -30,6 +30,10 @@ export default function Contato() {
 
     return (
         <>
+            <Head>
+                <title>Contato - Nissin Solutions</title>
+            </Head>
+
             <Header />
 
             <div className={styles.internaContainer}>

@@ -10,7 +10,7 @@ export default function Information() {
 
                             <img src="/email.png" alt="" />
                             <p>Email
-                                <span>contato@nissinsolutions.com.br</span>
+                                <span>nissin@nissinsolutions.com.br</span>
                             </p>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ export default function Information() {
                         <div className={styles.areaLightright}>
                             <img src="/place.png" alt="" />
                             <p>Endereço
-                                <span>Rua Rui Barbosa, 553 <br/>Costa e Silva</span>
+                                <span>Rua Rui Barbosa, 553 <br/>Joinville/SC - Brasil</span>
                             </p>
                         </div>
                     </div>

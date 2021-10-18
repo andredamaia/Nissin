@@ -124,10 +124,13 @@
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
-            align-items: center; 
+            align-items: flex-start; 
             position: relative;
-            border-bottom: 1px solid #979797;
+            border: 1px solid #e2e2e2;
+            border-radius: 8px;
+            padding: .5rem;
             padding-bottom: 5.5rem;
+            height: 18rem;
 
             &::after {
                 content: "";
@@ -155,6 +158,8 @@
                 justify-content: flex-start;
                 align-items: flex-start;
                 margin-left: 3rem;
+                padding-top: 1rem;
+                padding-right: 1rem;
     
                 strong {
                     font-size: 2rem;

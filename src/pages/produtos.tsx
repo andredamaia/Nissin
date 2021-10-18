@@ -129,7 +129,6 @@ export default function Produtos({ data }: any) {
                 </div>
             </div>
 
-
             <Information />
 
             <Footer />

@@ -10,7 +10,7 @@ export default function Sobre() {
   return (
     <>
         <Head>
-            <title>Nissin Solutions - Sobre</title>
+            <title>Sobre - Nissin Solutions</title>
         </Head>
 
         <Header />
@@ -39,9 +39,11 @@ export default function Sobre() {
                     <div className="col-12">
                         <h2>Sobre a Nissin</h2>
 
-                        <p>A Nissin Solutions Ltda, sediada em Joinville/SC, é distribuidora especialista em ferramentas de usinagem para as regiões de Santa Catarina e Paraná, trabalhando com marcas reconhecidas internacionalmente por fabricarem produtos de alto rendimento e excelente competitividade global.</p>
+                        <p>A Nissin Solutions, sediada em Joinville/SC, é uma empresa distribuidora de ferramentas e soluções técnicas para usinagem, trabalhando com marcas reconhecidas internacionalmente por fabricarem produtos com alta tecnologia e excelente competitividade global.</p>
 
-                        <p>Contamos com experiência e know-how na área provenientes de uma forte atuação no mercado de ferramentas há mais de 10 anos. Nossa estrutura de atendimento interno e externo foi desenhada para acompanhar a qualidade das marcas que distribuímos, de modo a agregar um atendimento completamente personalizado e único.</p>          
+                        <p>Contamos com experiência e know-how na área, provenientes de uma forte atuação no segmento de ferramentas há mais de uma década. Nossa estrutura de atendimento interno e externo foi projetada para ser o integrador de soluções entre fabricantes e clientes.</p>
+
+                        <p>Nossa estratégia de negócio vai muito além de fornecer produtos, estamos focados na entrega de serviços com inovações tecnológicas, estabelecendo uma relação sólida e confiável com nossos clientes, parceiros e colaboradores.</p>         
                     </div>
 
                     <div className="col-12" style={{ marginTop: 40 }}>
@@ -54,7 +56,7 @@ export default function Sobre() {
                                 <div className={styles.produtosTitle}>
                                     <h4>Missão</h4>
 
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in tincidunt neque. Donec efficitur lorem non felis laoreet iaculis.</p>
+                                    <p>Fornecer soluções com inovação tecnológica, implantado melhorias contínuas em processos indústrias, aplicando ferramentas de excelente custo- benefício, desenvolvendo o capital humano e gerando lucro.</p>
                                 </div>
                             </div>
 
@@ -66,7 +68,7 @@ export default function Sobre() {
                                 <div className={styles.produtosTitle}>
                                     <h4>Visão</h4>
 
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in tincidunt neque. Donec efficitur lorem non felis laoreet iaculis.</p>
+                                    <p>Ser reconhecida e respeitada como uma empresa sólida, diferenciada e saudável, tornando-se referência para nossos clientes, colaboradores e parceiros.</p>
                                 </div>
                             </div>
 
@@ -78,7 +80,7 @@ export default function Sobre() {
                                 <div className={styles.produtosTitle}>
                                     <h4>Valores</h4>
 
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in tincidunt neque. Donec efficitur lorem non felis laoreet iaculis.</p>
+                                    <p>Comprometimento, Responsabilidade, Parceria, Ética, Humildade, Dignidade, Vontade e Realização.</p>
                                 </div>
                             </div>
                         </div> 

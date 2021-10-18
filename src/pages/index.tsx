@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link'
-import SwiperCore, { Navigation } from 'swiper';
+import SwiperCore, { Navigation, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Header from '../components/header';
@@ -9,7 +9,7 @@ import Footer from '../components/footer';
 
 import styles from '../styles/pages/index.module.scss';
 
-SwiperCore.use([Navigation]);
+SwiperCore.use([Navigation, Autoplay]);
 
 export default function Home() {
   return (
@@ -21,7 +21,11 @@ export default function Home() {
       <Header />
 
       <div className={styles.bannerContent}>
-        <div className="container">
+        <video autoPlay muted loop webkit-playsinline="true" className={styles.video}>
+          <source src="/banner-2.mp4" type="video/mp4" />
+        </video>
+
+        <div className="container" style={{ position: 'relative', zIndex: 12 }}>
           <div className="row">
             <div className="col-12">
               <div className={styles.titleBanner}>
@@ -32,12 +36,6 @@ export default function Home() {
                     Conheça nossos produtos <img src="/arrow-right.png" alt="" />
                   </a>
                 </Link>
-              </div>
-            </div>
-
-            <div className="col-12">
-              <div className={styles.textEnd}>
-                Com experiência e know-how na área que vem<br/> de uma forte atuação no mercado ferramentas<br/> há mais de 10 anos.
               </div>
             </div>
           </div>
@@ -59,7 +57,7 @@ export default function Home() {
                   <div className={styles.produtosTitle}>
                       <h4>Cutting Tools</h4>
 
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in tincidunt neque. Donec efficitur lorem non felis laoreet iaculis.</p>
+                      <p>A busca incessante por melhorias de processos, é a locomotiva que move nossa missão de fornecer soluções com inovação tecnológica, implantado melhorias contínuas em processos industriais, aplicando ferramentas de excelente custo-benefício...</p>
                   </div>
 
                   <Link href="/categorias">
@@ -77,7 +75,7 @@ export default function Home() {
                   <div className={styles.produtosTitle}>
                     <h4>Management</h4>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in tincidunt neque. Donec efficitur lorem non felis laoreet iaculis.</p>
+                    <p>Acreditamos que as necessidades de nossos clientes, não se resume apenas em aquisição de produtos, suas demandas por inovações e melhorias contínuas a fim de reduzirem seus custos aumentando sua competitividade é essencial num mercado altamente competitivo...</p>
                   </div>
 
                   <a href="#" className="buttonPrimary">
@@ -93,7 +91,7 @@ export default function Home() {
                   <div className={styles.produtosTitle}>
                     <h4>Technology</h4>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in tincidunt neque. Donec efficitur lorem non felis laoreet iaculis.</p>
+                    <p>Você está satisfeito com a eficiência de suas máquinas? Nós podemos melhorar a eficiência delas, com nosso sistema de PRESSETING LASER, suas ferramentas podem ser presetadas de forma muito rápida, automática e segura...</p>
                   </div>
 
                   <a href="#" className="buttonPrimary">
@@ -108,6 +106,7 @@ export default function Home() {
                 <Swiper
                   spaceBetween={50}
                   slidesPerView={4}
+                  autoplay
                   loop={true}
                   onSlideChange={() => console.log('slide change')}
                   onSwiper={(swiper) => console.log(swiper)}
@@ -130,18 +129,7 @@ export default function Home() {
       <div className={styles.halfColor}>
         <div className="container">
           <div className="row">
-            <div className="col-12 col-md-6 col-xl-6">
-                <p className={styles.textTitle}>
-                  380+
-                  <span className={styles.textSubtitle}>Ferramentas disponíveis</span>
-                </p>
-
-                <div className={styles.description}>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius nibh quis erat eleifend vestibulum. Phasellus viverra ipsum nec quam rutrum, sed mollis ipsum efficitur. </p>
-                </div>
-            </div>
-
-            <div className="col-12 col-md-6 col-xl-6">
+            <div className="col-12">
               <div className={styles.management}>
                 <img src="./management.png" alt="" />
               </div>
@@ -207,11 +195,10 @@ export default function Home() {
                   </div>
                 </div>
 
-
                 <div className="col-4 col-md-3 col-xl-3">
                   <div className={styles.boxManagement}>
                     <div className={styles.imgCircle}>
-                      <img src="./icon-zero-point.jpg" alt="" />
+                      <img src="./zero-point.jpg" alt="" />
                     </div>
 
                     <div className={styles.boxSubtitle}>
@@ -277,9 +264,11 @@ export default function Home() {
             <div className="col-12 col-md-8 col-xl-8">
               <h2>Sobre a Nissin</h2>
 
-              <p>A Nissin Solutions Ltda, sediada em Joinville/SC, é distribuidora especialista em ferramentas de usinagem para as regiões de Santa Catarina e Paraná, trabalhando com marcas reconhecidas internacionalmente por fabricarem produtos de alto rendimento e excelente competitividade global.</p>
+              <p>A Nissin Solutions, sediada em Joinville/SC, é uma empresa distribuidora de ferramentas e soluções técnicas para usinagem, trabalhando com marcas reconhecidas internacionalmente por fabricarem produtos com alta tecnologia e excelente competitividade global.</p>
 
-              <p>Contamos com experiência e know-how na área provenientes de uma forte atuação no mercado de ferramentas há mais de 10 anos. Nossa estrutura de atendimento interno e externo foi desenhada para acompanhar a qualidade das marcas que distribuímos, de modo a agregar um atendimento completamente personalizado e único.</p>
+              <p>Contamos com experiência e know-how na área, provenientes de uma forte atuação no segmento de ferramentas há mais de uma década. Nossa estrutura de atendimento interno e externo foi projetada para ser o integrador de soluções entre fabricantes e clientes.</p>
+
+              <p>Nossa estratégia de negócio vai muito além de fornecer produtos, estamos focados na entrega de serviços com inovações tecnológicas, estabelecendo uma relação sólida e confiável com nossos clientes, parceiros e colaboradores.</p>
 
               <div>
                 <Link href="/sobre">

@@ -1,4 +1,5 @@
 import { GetStaticProps } from 'next';
+import Head from 'next/head'
 import Link from 'next/link'
 import { useEffect } from 'react';
 import gsap from 'gsap'
@@ -37,6 +38,10 @@ export default function Produtos({ data }: any) {
 
     return (
         <>
+            <Head>
+                <title>Torneamento - Nissin Solutions</title>
+            </Head>
+
             <Header />
 
             <div className={styles.internaContainer}>
@@ -108,12 +113,9 @@ export default function Produtos({ data }: any) {
                                 ))}
                             </div>
                         </div>
-
-                        <Suporte />
                     </div>
                 </div>
             </div>
-
 
             <Information />
 
@@ -123,7 +125,7 @@ export default function Produtos({ data }: any) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-    const { data } = await api.get('tools?per_page=90&_embed',  {
+    const { data } = await api.get('tools?per_page=90&_embed&categories=13&orderby=title&order=asc',  {
         params: {
             _limit: 12,
             _order: 'desc'

@@ -10,7 +10,9 @@ export default function Footer() {
                     <div className="row">
                         <div className="col-12 col-xl-3">
 
-                            <a href="#"><img src="/logo-footer.png" alt="" /></a>
+                            <a href="#">
+                                <img src="/logo.jpg" style={{ width: 140, mixBlendMode: 'multiply' }} alt="Nissin solutions" />
+                            </a>
 
                             <div className={styles.redesSociais}>
                                 <a href="#">
@@ -45,29 +47,27 @@ export default function Footer() {
 
                         <div className="col-12 col-xl-5">
                             <div className={`${styles.content}`}>
-                                <span className={styles.footerSubtitle}>Departamentos</span>
+                                <span className={styles.footerSubtitle}>Categorias</span>
 
                                 <div className="row">
                                     <div className="col-12 col-md-6">
+                                        <span>Fresamento</span>
+
+                                        <span>Torneamento</span>
+
                                         <span>Furação</span>
 
-                                        <span>Fresamento Insertadas</span>
-
-                                        <span>Acessórios</span>
-
                                         <span>Rosqueamento</span>
-
-                                        <span>Morsas</span>
                                     </div>
 
                                     <div className="col-12 col-md-6">
-                                        <span>Parafusos Especiais</span>
+                                        <span>Cones e Acessórios</span>
 
-                                        <span>Fresamento Inteiriças</span>
+                                        <span>Zero Point</span>
 
-                                        <span>Cones de Fixação</span>
+                                        <span>Gerenciamento de Ferramentas</span>
 
-                                        <span>Furação</span>
+                                        <span>Preset</span>
                                     </div>
                                 </div>
                             </div>
