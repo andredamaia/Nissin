@@ -4,6 +4,10 @@
     background-size: cover;
     position: relative;
 
+    svg {
+        width: 20rem;
+    }
+
     .menu {
         display: flex;
         flex-direction: column;

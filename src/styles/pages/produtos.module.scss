@@ -29,13 +29,23 @@
         padding: 2rem  0;
     }
 
+    .swiperParceiros {
+        .parceirosHolder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+
+            img { max-width: 90%;}
+        }
+    } 
+
     .pageIndication {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        border-bottom: 2px solid #BFC0BE;
-        padding-bottom: 2.4rem;
-        margin-bottom: 6.4rem;
+        padding-bottom: 2.5rem;
+        margin-bottom: 4.5rem;
 
         @media (max-width: 768px){
             margin-bottom: 3rem;
@@ -64,6 +74,49 @@
             font-size: 1.6rem;
             font-weight: 600;
             color: #B0B0B0;
+            line-height: 2.4rem;
+            margin: 0 2.1rem;
+
+            @media (max-width: 768px){
+                margin: 0 1rem;
+            }
+        }
+    }
+
+    &.product .pageIndication {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-bottom: 0;
+        margin-bottom: 0;
+
+        @media (max-width: 768px){
+            margin-bottom: 3rem;
+        }
+
+        a {
+            margin-bottom: 0;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #fff;
+            line-height: 2.4rem;
+            text-decoration: none;
+            display: inline-block;
+
+            @media (max-width: 768px){
+                font-size: 1.4rem;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        span {
+            margin-bottom: 0;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #fff;
             line-height: 2.4rem;
             margin: 0 2.1rem;
 
@@ -207,9 +260,232 @@
                 }
             }
         }
+    }
+}
 
-        
+.boxProdutos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 12rem;
+    text-align: center;
+
+    .produtosImg {
+        width: 82px;
+        height: 82px;
+        margin: auto;
+        margin-bottom: 1.5rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
+    .produtosTitle {
+        p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.4rem;
+            color: var(--text);
+            padding-bottom: 3rem;
+        }
+    }
 
+    a {
+        margin: auto;
+    }
+}
+
+@media (max-width: 769px) {
+    .areaWhite {
+
+        padding: 3rem 2rem;
+
+        .boxProdutos{
+            grid-template-columns: 1fr;
+            margin-bottom: 5rem;
+            text-align: center;
+
+            .produtosImg {
+                margin-bottom: 1.6rem;
+                width: auto;
+                height: auto;
+
+                img {
+                    width: 20%;
+                }
+            }
+
+            .produtosTitle {
+
+                p {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.halfColor {
+    padding: 8rem 0 4rem;
+    background-color: #192D4E;
+    position: relative;
+
+    .textTitle {
+        font-size: 13.9rem;
+        font-weight: 700;
+        color: #A8D445;
+        line-height: 9.8rem;
+        margin-top: 2rem;
+
+        span {
+            font-size: 3.5rem;
+            line-height: 2.8rem;
+            color: #ffffff;
+            font-weight: 600;
+            display: block;
+            margin: 1.5rem 0 6rem;
+        }
+    }
+
+    .description {
+        p { 
+            padding-right: 8rem;
+            font-size: 1.6rem;
+            font-weight: 600;
+            line-height: 2.8rem;
+            color: #ffffff;
+            
+        }
+    }
+
+    .management {
+        text-align: center;
+
+        img { 
+            margin-bottom: 4rem;
+            width: 90%;
+        }
+    }
+
+    .boxManagement {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        .imgCircle {
+            height: 8rem;
+            width: 8rem;
+
+            img { 
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .boxSubtitle {
+            margin-top: 1rem;
+
+            span {
+                font-size: 1.3rem;
+                color: #ffffff;
+                line-height: 1.6rem;
+                font-weight: 600;
+                text-align: center;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+    // &:after {
+    //     content: '';
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     background: url('../../../public/bg-header.png') bottom no-repeat;
+    //     z-index: 10;
+    //     width: 100%;
+    //     height: 100%;
+    //     opacity: .1;
+    // }
+}
+
+@media (max-width: 768px) {
+
+    .halfColor {
+
+        padding: 3rem 2rem;
+
+        .textTitle {
+            font-size: 7rem;
+            line-height: 5rem;
+            margin-top: 0;
+            padding: 0;
+
+            span {
+                font-size: 2.2rem;
+                line-height: 2rem;
+                margin: 1.5rem 0;
+            }
+        }
+
+        .description {
+            
+            p {
+                padding-right: 0;
+                margin-bottom: 0;
+                font-size: 1.3rem;
+            }
+        }
+
+        .management {
+             
+            img { 
+                margin: 2rem 0;
+                width: 100%;
+            }
+
+        }
+
+        .boxManagement {
+
+            .boxSubtitle {
+                span {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+    }
+}
+
+.imagesTools {
+    padding: 0;
+    background: #223655;
+
+    .fullContainer {
+        width: 25%;
+        padding: 0;
+
+        img { 
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .imagesTools {
+        padding: 0 0 2rem;
+    }
 }

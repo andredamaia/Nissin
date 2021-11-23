@@ -72,7 +72,7 @@ export default function Produtos({ data }: any) {
 
                                 <span>/</span>
 
-                                <Link href="/categorias">
+                                <Link href="/cutting-tools">
                                     <a>Cutting Tools</a>
                                 </Link>
 

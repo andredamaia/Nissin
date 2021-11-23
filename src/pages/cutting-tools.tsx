@@ -2,13 +2,16 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useEffect } from 'react';
 import gsap from 'gsap'
+import SwiperCore, { Navigation, Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Header from '../components/header';
-import Suporte from '../components/suporte';
 import Information from '../components/information';
 import Footer from '../components/footer';
 
 import styles from '../styles/pages/categorias.module.scss';
+
+SwiperCore.use([Navigation, Autoplay]);
 
 export default function Categoria() {
     useEffect(() => {
@@ -33,7 +36,7 @@ export default function Categoria() {
     return (
         <>
             <Head>
-                <title>Categorias - Nissin Solutions</title>
+                <title>Cutting Tools - Nissin Solutions</title>
             </Head>
 
             <Header />
@@ -45,8 +48,8 @@ export default function Categoria() {
                             <div className="col-12">
                                 <div className={styles.titleBanner}>
                                     <h1>
-                                        <span><div className="transition-text"><i>nossos</i></div></span>
-                                        <div className="transition-text"><i>produtos</i></div>
+                                        <span><div className="transition-text"><i>produtos</i></div></span>
+                                        <div className="transition-text"><i>cutting tools</i></div>
                                     </h1> 
                                 </div>  
                             </div>  
@@ -60,13 +63,31 @@ export default function Categoria() {
                     <div className="row">
                         <div className="col-12">
                             <div className={styles.pageIndication}>
-                            
                                 <a href="/">Home</a>
 
                                 <span>/</span>
 
-                                <a href="#">Cutting Tools</a>
+                                <Link href="/cutting-tools">
+                                    <a>
+                                        <strong>Cutting Tools</strong>
+                                    </a>
+                                </Link>
 
+                                <span>/</span>
+
+                                <Link href="/management">
+                                    <a>
+                                        Management
+                                    </a>
+                                </Link>
+
+                                <span>/</span>
+
+                                <Link href="/tecnology">
+                                    <a style={{ color: '#b0b0b0' }}>
+                                        Tecnology
+                                    </a>
+                                </Link>
                             </div>
 
                             <div className={styles.boxTools}>
@@ -130,6 +151,56 @@ export default function Categoria() {
                                     </a>
                                 </Link>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={styles.areaWhite}>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className={styles.swiperParceiros}>
+                                <Swiper
+                                    spaceBetween={50}
+                                    slidesPerView={4}
+                                    autoplay
+                                    loop={true}
+                                    onSlideChange={() => console.log('slide change')}
+                                    onSwiper={(swiper) => console.log(swiper)}
+                                    navigation
+                                    className={styles.parceirosSlider}
+                                >
+                                    <SwiperSlide><div className={styles.parceirosHolder}><img src="/ceratizit.png" alt="" /></div></SwiperSlide>
+                                    <SwiperSlide><div className={styles.parceirosHolder}><img src="/osg.png" alt="" /></div></SwiperSlide>
+                                    <SwiperSlide><div className={styles.parceirosHolder}><img src="/hgt.png" alt="" /></div></SwiperSlide>
+                                    <SwiperSlide><div className={styles.parceirosHolder}><img src="/startool.png" alt="" /></div></SwiperSlide>
+                                    <SwiperSlide><div className={styles.parceirosHolder}><img src="/geotecno.png" alt="" /></div></SwiperSlide>
+                                    <SwiperSlide><div className={styles.parceirosHolder}><img src="/spinwiser.png" alt="" /></div></SwiperSlide>
+                                </Swiper>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={styles.imagesTools}>
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className={styles.fullContainer}>
+                            <img src="/tool1.jpg" alt="" />
+                        </div>
+
+                        <div className={styles.fullContainer}>
+                            <img src="/tool2.jpg" alt="" />
+                        </div>
+
+                        <div className={styles.fullContainer}>
+                            <img src="/tool3.jpg" alt="" />
+                        </div>
+
+                        <div className={styles.fullContainer}>
+                            <img src="/tool4.jpg" alt="" />
                         </div>
                     </div>
                 </div>

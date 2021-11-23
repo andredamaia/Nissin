@@ -64,7 +64,7 @@ export default function Categoria() {
 
                                 <span>/</span>
 
-                                <Link href="/categorias">
+                                <Link href="/cutting-tools">
                                     <a>Cutting Tools</a>
                                 </Link>
 
@@ -90,7 +90,7 @@ export default function Categoria() {
                                 <Link href="/produtos/suportes-e-insertos-furacao">
                                     <a>
                                         <div className={styles.toolsImg}>
-                                            <img src="http://nissinsolutions.com.br/api/wp-content/uploads/2021/06/INFORMACOES-TECNICAS.jpg" alt="" />
+                                            <img src="/suportes-e-insertos.jpg" alt="" />
                                         </div>
 
                                         <div className={styles.toolsName}>

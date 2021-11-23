@@ -1,3 +1,8 @@
+import Link from 'next/link'
+import Head from 'next/head';
+import SwiperCore, { Navigation, Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 import { GetStaticProps } from 'next';
 import { useRouter } from 'next/router'
 import { useEffect } from 'react';
@@ -5,12 +10,12 @@ import gsap from 'gsap'
 import { api } from '../services/api'
 
 import Header from '../components/header';
-import Suporte from '../components/suporte';
 import Information from '../components/information';
 import Footer from '../components/footer';
 
 import styles from '../styles/pages/produtos.module.scss';
 
+SwiperCore.use([Navigation, Autoplay]);
 
 export default function Produtos({ data }: any) {
     const router = useRouter()
@@ -37,6 +42,10 @@ export default function Produtos({ data }: any) {
 
     return (
         <>
+            <Head>
+                <title>Nissin Solutions</title>
+            </Head>
+
             <Header />
 
             <div className={styles.internaContainer}>
@@ -56,75 +65,225 @@ export default function Produtos({ data }: any) {
                 </div>
             </div>
 
-            <div className={styles.areaWhite}>
+            <div className={`${styles.areaWhite} ${styles.product}`} style={{ marginTop: -145, zIndex: 10, position: 'relative', paddingBottom: 0 }}>
                 <div className="container">
                     <div className="row">
 
                         <div className="col-12">
                             <div className={styles.pageIndication}>
-                                
                                 <a href="/">Home</a>
 
                                 <span>/</span>
 
-                                <a href="#">Cutting Tools</a>
+                                <Link href="/cutting-tools">
+                                    <a>
+                                        Cutting Tools
+                                    </a>
+                                </Link>
 
                                 <span>/</span>
 
-                                <a href="#">Faceamento</a>
+                                <Link href="/management">
+                                    <a>
+                                        Management
+                                    </a>
+                                </Link>
 
+                                <span>/</span>
+
+                                <Link href="/tecnology">
+                                    <a>
+                                        Tecnology
+                                    </a>
+                                </Link>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
 
-                        <div className="col-12 col-xl-4">
-                            <div className={styles.sidebar}>
-                                <p>Cutting tools</p>
-
-                                <ul>
-                                    <li>Fresamento</li>
-                                    <li>Faceamento</li>
-                                    <li>Contorno</li>
-                                    <li>Redondo</li>
-                                    <li>Copia</li>
-                                    <li>Chaves</li>
-                                    <li>Geral</li>
-                                </ul>
+            <div className={styles.areaWhite}>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className={styles.swiperParceiros}>
+                                <Swiper
+                                    spaceBetween={50}
+                                    slidesPerView={4}
+                                    autoplay
+                                    loop={true}
+                                    onSlideChange={() => console.log('slide change')}
+                                    onSwiper={(swiper) => console.log(swiper)}
+                                    navigation
+                                    className={styles.parceirosSlider}
+                                    >
+                                    <SwiperSlide><div className={styles.parceirosHolder}><img src="/ceratizit.png" alt="" /></div></SwiperSlide>
+                                    <SwiperSlide><div className={styles.parceirosHolder}><img src="/osg.png" alt="" /></div></SwiperSlide>
+                                    <SwiperSlide><div className={styles.parceirosHolder}><img src="/hgt.png" alt="" /></div></SwiperSlide>
+                                    <SwiperSlide><div className={styles.parceirosHolder}><img src="/startool.png" alt="" /></div></SwiperSlide>
+                                    <SwiperSlide><div className={styles.parceirosHolder}><img src="/geotecno.png" alt="" /></div></SwiperSlide>
+                                    <SwiperSlide><div className={styles.parceirosHolder}><img src="/spinwiser.png" alt="" /></div></SwiperSlide>
+                                    <SwiperSlide><div className={styles.parceirosHolder}><img src="/american.png" alt="" /></div></SwiperSlide>
+                                    <SwiperSlide><div className={styles.parceirosHolder}><img src="/bt-fixo.jpg" alt="" /></div></SwiperSlide>
+                                </Swiper>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
 
-                        <div className="col-12 col-xl-8">
-                            <div className={styles.products}>
+            <div className={styles.halfColor}>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="row">
+                                <div className="col-4 col-md-3 col-xl-3">
+                                    <Link href="/produtos/fresamento">
+                                        <a>
+                                        <div className={styles.boxManagement}>
+                                            <div className={styles.imgCircle}>
+                                            <img src="./icon-fresamento.jpg" alt="" />
+                                            </div>
 
-                                {tools.map(tool =>(
-                                    <div className={styles.productsBox}>
-                                        <div className={styles.productsImg}>
-                                            <img 
-                                                width="100%" 
-                                                height="90" 
-                                                src={tool._embedded['wp:featuredmedia'][0].source_url} 
-                                                alt=""
-                                            />
+                                            <div className={styles.boxSubtitle}>
+                                            <span>Fresamento</span>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </Link>
+                                </div>
+
+                                <div className="col-4 col-md-3 col-xl-3">
+                                    <Link href="/produtos/torneamento">
+                                        <a>
+                                        <div className={styles.boxManagement}>
+                                            <div className={styles.imgCircle}>
+                                            <img src="./icon-torneamento.jpg" alt="" />
+                                            </div>
+
+                                            <div className={styles.boxSubtitle}>
+                                            <span>Torneamento</span>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </Link>
+                                </div>
+
+                                <div className="col-4 col-md-3 col-xl-3">
+                                    <Link href="/produtos/furacao">
+                                        <a>
+                                        <div className={styles.boxManagement}>
+                                            <div className={styles.imgCircle}>
+                                            <img src="./icon-furacao.jpg" alt="" />
+                                            </div>
+
+                                            <div className={styles.boxSubtitle}>
+                                            <span>Furação</span>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </Link>
+                                </div>
+
+                                <div className="col-4 col-md-3 col-xl-3">
+                                    <Link href="/produtos/rosqueamento">
+                                        <a>
+                                        <div className={styles.boxManagement}>
+                                            <div className={styles.imgCircle}>
+                                            <img src="./icon-rosqueamento.jpg" alt="" />
+                                            </div>
+
+                                            <div className={styles.boxSubtitle}>
+                                            <span>Rosqueamento</span>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </Link>
+                                </div>
+
+                                <div className="col-4 col-md-3 col-xl-3">
+                                    <Link href="/produtos/fixacao">
+                                        <a>
+                                        <div className={styles.boxManagement}>
+                                            <div className={styles.imgCircle}>
+                                            <img src="./icon-cones-e-acessorios.jpg" alt="" />
+                                            </div>
+
+                                            <div className={styles.boxSubtitle}>
+                                            <span>Fixação</span>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </Link>
+                                </div>
+
+                                <div className="col-4 col-md-3 col-xl-3">
+                                    <div className={styles.boxManagement}>
+                                        <div className={styles.imgCircle}>
+                                        <img src="./zero-point.jpg" alt="" />
                                         </div>
 
-                                        <div className={styles.productsDescription}>
-                                            <strong>{tool.title.rendered}</strong>
-
-                                            <a href={tool.acf.arquivo} target="_blank">
-                                                <svg width="21" height="26" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fillRule="evenodd" clipRule="evenodd" d="M14.2839 0.200943C14.1623 0.0753784 13.9957 0 13.823 0H3.48295C1.57494 0 0 1.53871 0 3.41008V22.5897C0 24.4613 1.57494 26 3.48295 26H17.5171C19.4251 26 21 24.4613 21 22.5897V7.36031C21 7.19705 20.9232 7.04015 20.8144 6.92073L14.2839 0.200943ZM14.4695 2.21692L18.8424 6.71979H15.9998C15.1546 6.71979 14.4695 6.05408 14.4695 5.22511V2.21692ZM3.48295 24.744H17.5171C18.7207 24.744 19.7195 23.7706 19.7195 22.5897V7.97583H15.9997C14.444 7.97583 13.189 6.75113 13.189 5.22511V1.25604H3.48295C2.27929 1.25604 1.2805 2.23576 1.2805 3.41008V22.5897C1.2805 23.7706 2.28577 24.744 3.48295 24.744Z" fill="#192D4E"/>
-                                                <path d="M15.3437 20H4.6497C4.29243 20 4 20.4498 4 21C4 21.5499 4.29243 22 4.6497 22H15.3503C15.7076 22 16 21.5499 16 21C16 20.4498 15.7076 20 15.3437 20Z" fill="#192D4E"/>
-                                                <path d="M9.57101 17.793C9.68199 17.9224 9.83371 18 9.99705 18C10.1606 18 10.3123 17.9224 10.4231 17.793L13.8434 13.7245C14.0652 13.4656 14.0477 13.0517 13.8143 12.8124C13.5807 12.5667 13.2072 12.5859 12.9913 12.8447L10.5807 15.7101V8.64684C10.5807 8.29093 10.318 8 9.99705 8C9.67609 8 9.41338 8.29093 9.41338 8.64684V15.7101L7.00866 12.8447C6.78688 12.5861 6.41909 12.5667 6.1857 12.8124C5.95231 13.0582 5.93479 13.4658 6.15657 13.7245L9.57101 17.793Z" fill="#192D4E"/>
-                                                </svg>
-
-                                                ver detalhes
-                                            </a>
+                                        <div className={styles.boxSubtitle}>
+                                        <span>Zero Point</span>
                                         </div>
                                     </div>
-                                ))}
+                                </div>
+
+                                <div className="col-4 col-md-3 col-xl-3">
+                                    <Link href="/management">
+                                        <a>
+                                        <div className={styles.boxManagement}>
+                                            <div className={styles.imgCircle}>
+                                            <img src="./icon-gerenciamento-de-ferramentas.jpg" alt="" />
+                                            </div>
+
+                                            <div className={styles.boxSubtitle}>
+                                            <span>Gerenciamento <br />de Ferramentas</span>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </Link>
+                                </div>
+
+                                <div className="col-4 col-md-3 col-xl-3">
+                                    <Link href="/tecnology">
+                                        <a>
+                                        <div className={styles.boxManagement}>
+                                            <div className={styles.imgCircle}>
+                                            <img src="./icon-preset.jpg" alt="" />
+                                            </div>
+
+                                            <div className={styles.boxSubtitle}>
+                                            <span>Preset</span>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
 
-                        <Suporte />
+            <div className={styles.imagesTools}>
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className={styles.fullContainer}>
+                            <img src="/tool1.jpg" alt="" />
+                        </div>
+
+                        <div className={styles.fullContainer}>
+                            <img src="/tool2.jpg" alt="" />
+                        </div>
+
+                        <div className={styles.fullContainer}>
+                            <img src="/tool3.jpg" alt="" />
+                        </div>
+
+                        <div className={styles.fullContainer}>
+                            <img src="/tool4.jpg" alt="" />
+                        </div>
                     </div>
                 </div>
             </div>

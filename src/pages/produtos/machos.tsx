@@ -64,7 +64,7 @@ export default function Categoria() {
 
                                 <span>/</span>
 
-                                <Link href="/categorias">
+                                <Link href="/cutting-tools">
                                     <a>Cutting Tools</a>
                                 </Link>
 

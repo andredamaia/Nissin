@@ -33,41 +33,39 @@ export default function Footer() {
 
                         <div className="col-12 col-xl-3 offset-xl-1">
                             <div className={styles.footerProducts}>
-                                <span className={styles.footerSubtitle}>Produtos</span>
+                                <span className={styles.footerSubtitle}>Categorias</span>
 
-                                <Link href="/categorias">
+                                <Link href="/cutting-tools">
                                     <a className="transition-line" data-hover-color="dove-gray">Cutting Tools</a>
                                 </Link>
-                               
-                                <a href="#" className="transition-line" data-hover-color="dove-gray">Management</a>
 
-                                <a href="#" className="transition-line" data-hover-color="dove-gray">Tecnology</a>
+                                <Link href="/management">
+                                    <a className="transition-line" data-hover-color="dove-gray">Management</a>
+                                </Link>
+
+                                <Link href="/tecnology">
+                                    <a className="transition-line" data-hover-color="dove-gray">Tecnology</a>
+                                </Link>
                             </div>
                         </div>
 
-                        <div className="col-12 col-xl-5">
+                        <div className="col-12 col-xl-4 offset-xl-1">
                             <div className={`${styles.content}`}>
-                                <span className={styles.footerSubtitle}>Categorias</span>
+                                <span className={styles.footerSubtitle}>Produtos</span>
 
                                 <div className="row">
                                     <div className="col-12 col-md-6">
-                                        <span>Fresamento</span>
-
-                                        <span>Torneamento</span>
-
-                                        <span>Furação</span>
-
-                                        <span>Rosqueamento</span>
+                                        <Link href="/produtos/fresamento"><a>Fresamento</a></Link>
+                                        <Link href="/produtos/torneamento"><a>Torneamento</a></Link>
+                                        <Link href="/produtos/furacao"><a>Furação</a></Link>
+                                        <Link href="/produtos/rosqueamento"><a>Rosqueamento</a></Link>
                                     </div>
 
                                     <div className="col-12 col-md-6">
-                                        <span>Cones e Acessórios</span>
-
-                                        <span>Zero Point</span>
-
-                                        <span>Gerenciamento de Ferramentas</span>
-
-                                        <span>Preset</span>
+                                        <Link href="/produtos/fixacao"><a>Fixação</a></Link>
+                                        <Link href="#"><a>Zero Point</a></Link>
+                                        <Link href="/management"><a>Gerenciamento</a></Link>
+                                        <Link href="/tecnology"><a>Preset</a></Link>
                                     </div>
                                 </div>
                             </div>

@@ -31,7 +31,7 @@ export default function Home() {
               <div className={styles.titleBanner}>
                 <h1><span>especialista</span> <br/>em ferramentas <br/>de usinagem</h1>
 
-                <Link href="/categorias">
+                <Link href="/produtos">
                   <a className="transition-line" data-hover-color="mantis">
                     Conheça nossos produtos <img src="/arrow-right.png" alt="" />
                   </a>
@@ -42,7 +42,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.areaWhite}>
+      <div className={styles.areaWhite} style={{ paddingBottom: 0 }}>
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -60,14 +60,14 @@ export default function Home() {
                       <p>A busca incessante por melhorias de processos, é a locomotiva que move nossa missão de fornecer soluções com inovação tecnológica, implantado melhorias contínuas em processos industriais, aplicando ferramentas de excelente custo-benefício...</p>
                   </div>
 
-                  <Link href="/categorias">
+                  <Link href="/cutting-tools">
                     <a className="buttonPrimary">
                       Ver Produtos
                     </a>
                   </Link>
                 </div>
 
-                <div className={styles.box} style={{ opacity: .4 }}>
+                <div className={styles.box}>
                   <div className={styles.produtosImg}>
                     <img src="/object-2.png" alt="" />
                   </div>
@@ -78,12 +78,14 @@ export default function Home() {
                     <p>Acreditamos que as necessidades de nossos clientes, não se resume apenas em aquisição de produtos, suas demandas por inovações e melhorias contínuas a fim de reduzirem seus custos aumentando sua competitividade é essencial num mercado altamente competitivo...</p>
                   </div>
 
-                  <a href="#" className="buttonPrimary">
-                    Em breve
-                  </a>
+                  <Link href="/management">
+                    <a className="buttonPrimary">
+                      Ver mais
+                    </a>
+                  </Link>
                 </div>
 
-                <div className={styles.box} style={{ opacity: .4 }}>
+                <div className={styles.box}>
                   <div className={styles.produtosImg}>
                     <img src="/object-3.png" alt="" />
                   </div>
@@ -91,36 +93,16 @@ export default function Home() {
                   <div className={styles.produtosTitle}>
                     <h4>Technology</h4>
 
-                    <p>Você está satisfeito com a eficiência de suas máquinas? Nós podemos melhorar a eficiência delas, com nosso sistema de PRESSETING LASER, suas ferramentas podem ser presetadas de forma muito rápida, automática e segura...</p>
+                    <p>Você está satisfeito com a eficiência de suas máquinas? Nós podemos melhorar a eficiência delas, com nosso sistema de Preseting Laser, suas ferramentas podem ser presetadas de forma muito rápida, automática e segura...</p>
                   </div>
 
-                  <a href="#" className="buttonPrimary">
-                    Em breve
-                  </a>
+                  <Link href="/tecnology">
+                    <a className="buttonPrimary">
+                      Ver mais
+                    </a>
+                  </Link>
                 </div>
               </div> 
-
-              <h2>Parceiros</h2> 
-
-              <div className={styles.swiperParceiros}>
-                <Swiper
-                  spaceBetween={50}
-                  slidesPerView={4}
-                  autoplay
-                  loop={true}
-                  onSlideChange={() => console.log('slide change')}
-                  onSwiper={(swiper) => console.log(swiper)}
-                  navigation
-                  className={styles.parceirosSlider}
-                >
-                  <SwiperSlide><div className={styles.parceirosHolder}><img src="/ceratizit.png" alt="" /></div></SwiperSlide>
-                  <SwiperSlide><div className={styles.parceirosHolder}><img src="/osg.png" alt="" /></div></SwiperSlide>
-                  <SwiperSlide><div className={styles.parceirosHolder}><img src="/hgt.png" alt="" /></div></SwiperSlide>
-                  <SwiperSlide><div className={styles.parceirosHolder}><img src="/startool.png" alt="" /></div></SwiperSlide>
-                  <SwiperSlide><div className={styles.parceirosHolder}><img src="/geotecno.png" alt="" /></div></SwiperSlide>
-                  <SwiperSlide><div className={styles.parceirosHolder}><img src="/spinwiser.png" alt="" /></div></SwiperSlide>
-                </Swiper>
-              </div>
             </div>
           </div>
         </div>
@@ -130,69 +112,85 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <div className={styles.management}>
-                <img src="./management.png" alt="" />
-              </div>
-
               <div className="row">
                 <div className="col-4 col-md-3 col-xl-3">
-                  <div className={styles.boxManagement}>
-                    <div className={styles.imgCircle}>
-                      <img src="./icon-fresamento.jpg" alt="" />
-                    </div>
+                  <Link href="/produtos/fresamento">
+                    <a>
+                      <div className={styles.boxManagement}>
+                        <div className={styles.imgCircle}>
+                          <img src="./icon-fresamento.jpg" alt="" />
+                        </div>
 
-                    <div className={styles.boxSubtitle}>
-                      <span>Fresamento</span>
-                    </div>
-                  </div>
+                        <div className={styles.boxSubtitle}>
+                          <span>Fresamento</span>
+                        </div>
+                      </div>
+                    </a>
+                  </Link>
                 </div>
 
                 <div className="col-4 col-md-3 col-xl-3">
-                  <div className={styles.boxManagement}>
-                    <div className={styles.imgCircle}>
-                      <img src="./icon-torneamento.jpg" alt="" />
-                    </div>
+                  <Link href="/produtos/torneamento">
+                    <a>
+                      <div className={styles.boxManagement}>
+                        <div className={styles.imgCircle}>
+                          <img src="./icon-torneamento.jpg" alt="" />
+                        </div>
 
-                    <div className={styles.boxSubtitle}>
-                      <span>Torneamento</span>
-                    </div>
-                  </div>
+                        <div className={styles.boxSubtitle}>
+                          <span>Torneamento</span>
+                        </div>
+                      </div>
+                    </a>
+                  </Link>
                 </div>
 
                 <div className="col-4 col-md-3 col-xl-3">
-                  <div className={styles.boxManagement}>
-                    <div className={styles.imgCircle}>
-                      <img src="./icon-furacao.jpg" alt="" />
-                    </div>
+                  <Link href="/produtos/furacao">
+                    <a>
+                      <div className={styles.boxManagement}>
+                        <div className={styles.imgCircle}>
+                          <img src="./icon-furacao.jpg" alt="" />
+                        </div>
 
-                    <div className={styles.boxSubtitle}>
-                      <span>Furação</span>
-                    </div>
-                  </div>
+                        <div className={styles.boxSubtitle}>
+                          <span>Furação</span>
+                        </div>
+                      </div>
+                    </a>
+                  </Link>
                 </div>
 
                 <div className="col-4 col-md-3 col-xl-3">
-                  <div className={styles.boxManagement}>
-                    <div className={styles.imgCircle}>
-                      <img src="./icon-rosqueamento.jpg" alt="" />
-                    </div>
+                  <Link href="/produtos/rosqueamento">
+                    <a>
+                      <div className={styles.boxManagement}>
+                        <div className={styles.imgCircle}>
+                          <img src="./icon-rosqueamento.jpg" alt="" />
+                        </div>
 
-                    <div className={styles.boxSubtitle}>
-                      <span>Rosqueamento</span>
-                    </div>
-                  </div>
+                        <div className={styles.boxSubtitle}>
+                          <span>Rosqueamento</span>
+                        </div>
+                      </div>
+                    </a>
+                  </Link>
                 </div>
 
                 <div className="col-4 col-md-3 col-xl-3">
-                  <div className={styles.boxManagement}>
-                    <div className={styles.imgCircle}>
-                      <img src="./icon-cones-e-acessorios.jpg" alt="" />
-                    </div>
+                  <Link href="/produtos/fixacao">
+                    <a>
+                      <div className={styles.boxManagement}>
+                        <div className={styles.imgCircle}>
+                          <img src="./icon-cones-e-acessorios.jpg" alt="" />
+                        </div>
 
-                    <div className={styles.boxSubtitle}>
-                      <span>Cones e Acessórios</span>
-                    </div>
-                  </div>
+                        <div className={styles.boxSubtitle}>
+                          <span>Fixação</span>
+                        </div>
+                      </div>
+                    </a>
+                  </Link>
                 </div>
 
                 <div className="col-4 col-md-3 col-xl-3">
@@ -208,27 +206,35 @@ export default function Home() {
                 </div>
 
                 <div className="col-4 col-md-3 col-xl-3">
-                  <div className={styles.boxManagement}>
-                    <div className={styles.imgCircle}>
-                      <img src="./icon-gerenciamento-de-ferramentas.jpg" alt="" />
-                    </div>
+                  <Link href="/management">
+                    <a>
+                      <div className={styles.boxManagement}>
+                        <div className={styles.imgCircle}>
+                          <img src="./icon-gerenciamento-de-ferramentas.jpg" alt="" />
+                        </div>
 
-                    <div className={styles.boxSubtitle}>
-                      <span>Gerenciamento de Ferramentas</span>
-                    </div>
-                  </div>
+                        <div className={styles.boxSubtitle}>
+                          <span>Gerenciamento <br />de Ferramentas</span>
+                        </div>
+                      </div>
+                    </a>
+                  </Link>
                 </div>
 
                 <div className="col-4 col-md-3 col-xl-3">
-                  <div className={styles.boxManagement}>
-                    <div className={styles.imgCircle}>
-                      <img src="./icon-preset.jpg" alt="" />
-                    </div>
+                  <Link href="/tecnology">
+                    <a>
+                      <div className={styles.boxManagement}>
+                        <div className={styles.imgCircle}>
+                          <img src="./icon-preset.jpg" alt="" />
+                        </div>
 
-                    <div className={styles.boxSubtitle}>
-                      <span>Preset</span>
-                    </div>
-                  </div>
+                        <div className={styles.boxSubtitle}>
+                          <span>Preset</span>
+                        </div>
+                      </div>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -253,6 +259,38 @@ export default function Home() {
 
             <div className={styles.fullContainer}>
               <img src="/tool4.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.areaWhite}>
+        <div className="container">
+          <div className="row">
+            <div className="col-12 text-center">
+              <h2>Parceiros</h2> 
+
+              <div className={styles.swiperParceiros}>
+                <Swiper
+                  spaceBetween={50}
+                  slidesPerView={4}
+                  autoplay
+                  loop={true}
+                  onSlideChange={() => console.log('slide change')}
+                  onSwiper={(swiper) => console.log(swiper)}
+                  navigation
+                  className={styles.parceirosSlider}
+                >
+                  <SwiperSlide><div className={styles.parceirosHolder}><img src="/ceratizit.png" alt="" /></div></SwiperSlide>
+                  <SwiperSlide><div className={styles.parceirosHolder}><img src="/osg.png" alt="" /></div></SwiperSlide>
+                  <SwiperSlide><div className={styles.parceirosHolder}><img src="/hgt.png" alt="" /></div></SwiperSlide>
+                  <SwiperSlide><div className={styles.parceirosHolder}><img src="/startool.png" alt="" /></div></SwiperSlide>
+                  <SwiperSlide><div className={styles.parceirosHolder}><img src="/geotecno.png" alt="" /></div></SwiperSlide>
+                  <SwiperSlide><div className={styles.parceirosHolder}><img src="/spinwiser.png" alt="" /></div></SwiperSlide>
+                  <SwiperSlide><div className={styles.parceirosHolder}><img src="/american.png" alt="" /></div></SwiperSlide>
+                  <SwiperSlide><div className={styles.parceirosHolder}><img src="/bt-fixo.jpg" alt="" /></div></SwiperSlide>
+                </Swiper>
+              </div>
             </div>
           </div>
         </div>

@@ -69,7 +69,7 @@ export default function Parceiros() {
 
                         <p>Toda essa excelência na fabricação de ferramentas nos credencia a sermos seu Parceiro Confiável para soluções em usinagem.</p>
 
-                        <p>Saiba mais sobre a Ceratizit: <a href="https://www.ceratizit.com" target="_blank">www.ceratizit.com</a></p>
+                        <p>Saiba mais sobre a Ceratizit: <a target="_blank" href="https://www.ceratizit.com">www.ceratizit.com</a></p>
 
                         <p>A NISSIN SOLUTIONS possui exclusividade de distribuição das nossas ferramentas para os estados de Santa Catarina e Paraná.</p>
                     </div>
@@ -89,9 +89,9 @@ export default function Parceiros() {
 
                         <p>A OSG é líder mundial na fabricação de ferramentas de corte como machos, brocas, fresas e laminadores. Oferecer a melhor qualidade, precisão e eficiência de nossos produtos são as principais preocupações ao fornecer ferramentas para a indústria de manufatura.  A OSG aproveita a habilidade técnica cultivada através de anos de experiência para desenvolver e fornecer aos nossos clientes produtos de alto valor agregado que atendam às suas necessidades, melhorando o seu processo e a qualidade dos produtos fabricados.</p>
 
-                        <p>Saiba mais sobre a OSG: <a href="https://www.osg.com.br" target="_blank">www.osg.com.br</a></p>
+                        <p>Saiba mais sobre a OSG: <a target="_blank" href="https://www.osg.com.br">www.osg.com.br</a></p>
 
-                        <p>A NISSIN SOLUTIONS possui exclusividade de distribuição das nossas ferramentas para os estados de Santa Catarina e Paraná.</p>
+                        <p>A NISSIN SOLUTIONS é distribuidor autorizado para os estados de Santa Catarina e Paraná.</p>
                     </div>
 
                     <div className="col-12">
@@ -117,7 +117,7 @@ export default function Parceiros() {
 
                         <p>A NISSIN SOLUTIONS possui exclusividade de distribuição das nossas ferramentas para todo território brasileiro.</p>
 
-                        <p>Saiba mais sobre a HG: <a href="https://www.hgt-endmills.com" target="_blank">www.hgt-endmills.com</a></p>
+                        <p>Saiba mais sobre a HG: <a target="_blank" href="https://www.hgt-endmills.com">www.hgt-endmills.com</a></p>
                     </div>
 
                     <div className="col-12">
@@ -141,7 +141,7 @@ export default function Parceiros() {
 
                         <p>A NISSIN SOLUTIONS possui exclusividade de distribuição das nossas ferramentas para todo território brasileiro.</p>
 
-                        <p>Saiba mais sobre a StarTool: <a href="https://www.startool.co.kr " target="_blank">www.www.startool.co.kr</a></p>
+                        <p>Saiba mais sobre a StarTool: <a target="_blank" href="https://www.startool.co.kr">www.www.startool.co.kr</a></p>
                     </div>
 
                     <div className="col-12">
@@ -155,13 +155,15 @@ export default function Parceiros() {
                     </div>
 
                     <div className="col-12 col-xl-8 offset-xl-1">
-                        <h4>Spinwaser</h4>
+                        <h4>Spinwiser</h4>
 
-                        <p>WASERS: Spinwiser é uma plataforma de gerenciamento eletrônico e automatizada de estoque e uso de ferramentas para a indústria 4.0 que envolve tecnologias em hardware, software e BI.</p>
+                        <p>WISERS: Spinwiser é uma plataforma de gerenciamento eletrônico e automatizada de estoque e uso de ferramentas para a indústria 4.0 que envolve tecnologias em hardware, software e BI.</p>
 
                         <p>Com uma interface segura e fácil de navegar, você terá controle total do consumo de itens cadastrados no sistema</p>
 
                         <p>Conheça essa Plataforma, que revolucionou a forma de controle, armazenagem e liberação de ferramentas.</p>
+
+                        <p>Saiba mais sobre a Spinwiser: <a target="_blank" href="https://www.spinwiser.com.br/">https://www.spinwiser.com.br/</a></p>
                     </div>
 
                     <div className="col-12">
@@ -185,7 +187,7 @@ export default function Parceiros() {
 
                         <p>A NISSIN SOLUTIONS é a distribuidora especialista autorizada para os estados de Santa Catarina e Paraná.</p>
 
-                        <p>Saiba mais sobre a Geotecno: <a href="https://www.geotecno.com.br">www.geotecno.com.br</a></p>
+                        <p>Saiba mais sobre a Geotecno: <a target="_blank" href="https://www.geotecno.com.br">www.geotecno.com.br</a></p>
                     </div>
 
                     <div className="col-12">
@@ -207,7 +209,33 @@ export default function Parceiros() {
 
                         <p>A NISSIN SOLUTIONS é a distribuidora especialista autorizada para os estados de Santa Catarina e Paraná.</p>
 
-                        <p>Saiba mais sobre a American: <a href="https://www.americanhydraulics.com.br ">www.americanhydraulics.com.br </a></p>
+                        <p>Saiba mais sobre a American: <a target="_blank" href="https://www.americanhydraulics.com.br">www.americanhydraulics.com.br </a></p>
+                    </div>
+
+                    <div className="col-12">
+                        <div style={{ margin: '40px 0 60px', border: '1px solid #f1f1f1' }}></div>
+                    </div>
+                </div>
+
+                <div className="row">
+                    <div className="col-12 col-xl-3">
+                        <div className={styles.parceirosHolder}><img src="/bt-fixo.jpg" alt="" /></div>
+                    </div>
+
+                    <div className="col-12 col-xl-8 offset-xl-1">
+                        <h4>BT Fixo</h4>
+
+                        <p>A BTfixo atua no segmento de acessórios para usinagem desde 2008, trabalhando em parceria com os principais fabricantes de ferramentas do mercado Internacional.</p>
+
+                        <p>Iniciando em 2017 a distribuição com exclusividade para o Brasil, de soquetes de impacto da empresa Action, um dos maiores fabricantes de soquetes de impacto do mundo, situada em Taiwan.</p>
+
+                        <p>Nossa empresa tem como objetivo primordial o aperfeiçoamento de soluções que atendam a demanda no ramo de acessórios para usinagem e soquetes de impacto nos mais variados segmentos.</p>
+
+                        <p>Nosso atendimento está capacitado para suprir as necessidades de cada cliente, estoque e logística, sendo sinônimo de garantia de disponibilidade.</p>
+
+                        <p>A empresa dedica especial atenção para o desenvolvimento dos clientes juntamente como o processo de negociação, transformando-a em destaque no mercado.</p>
+
+                        <p>Saiba mais sobre a BT Fixo: <a target="_blank" href="http://www.btfixo.com.br">www.btfixo.com.br </a></p>
                     </div>
 
                     <div className="col-12">
