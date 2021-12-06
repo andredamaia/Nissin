@@ -59,8 +59,8 @@ export default function Produtos({ data }: any) {
                             <div className="col-12">
                                 <div className={styles.titleBanner}>
                                     <h1>
-                                        <span><div className="transition-text"><i>nossos</i></div></span>
-                                        <div className="transition-text"><i>produtos</i></div>
+                                        <span><div className="transition-text"><i>produtos</i></div></span>
+                                        <div className="transition-text"><i>cutting tools</i></div>
                                     </h1> 
                                 </div>  
                             </div>  
