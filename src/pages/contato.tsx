@@ -70,15 +70,20 @@ export default function Contato() {
                             <strong>Mande uma mensagem com sua dúvida, <br/>entraremos em contato para solucionar com você.</strong>
                         </div>
 
-                        <div className="col-12 col-xl-8">
-                            <form className={styles.formHighlight}>
-                                <input type="text" placeholder="Seu Nome" required/>
+                        <div className="col-12">
+                            <form className={styles.formHighlight} action="https://formsubmit.co/nissin@nissinsolutions.com.br" method="POST">
+                                <input type="hidden" name="_captcha" value="false" />
+                                <input type="hidden" name="_subject" value="Novo Contato" />
+                                <input type="hidden" name="_next" value="http://localhost:3000/sucesso" />
+                                <input type="hidden" name="_cc" value="nissin@nissinmetais.com.br"></input>
 
-                                <input type="text" placeholder="Seu e-mail" required/>
+                                <input type="text" name="Nome" placeholder="Seu Nome" required/>
 
-                                <input type="text" placeholder="Sobre o que deseja falar?" required/>
+                                <input type="text" name="E-mail" placeholder="Seu e-mail" required/>
 
-                                <textarea name="" id="" cols={30} rows={7} placeholder="Mensagem" required/>
+                                <input type="text" name="Assunto" placeholder="Sobre o que deseja falar?" required/>
+
+                                <textarea name="Mensagem" id="" cols={30} rows={7} placeholder="Mensagem" required/>
 
                                 <button className={styles.buttonSecundary}>
                                     Enviar mensagem
@@ -86,7 +91,7 @@ export default function Contato() {
                             </form>
                         </div>
 
-                        <div className="col-12 col-xl-4">
+                        {/* <div className="col-12 col-xl-4">
                             <div className={styles.boxAjuda}>
                                 
                                 <a href="#" className={styles.boxGreen}>
@@ -122,7 +127,7 @@ export default function Contato() {
                                 </a>
                                 
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
