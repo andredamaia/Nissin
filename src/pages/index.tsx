@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import SwiperCore, { Navigation, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -12,6 +13,13 @@ import styles from '../styles/pages/index.module.scss';
 SwiperCore.use([Navigation, Autoplay]);
 
 export default function Home() {
+  const router = useRouter()
+  const { send } = router.query
+
+  if(send){
+    alert('Mensagem enviada com sucesso. Obrigado!')
+  }
+
   return (
     <>
       <Head>
@@ -285,7 +293,7 @@ export default function Home() {
                   <SwiperSlide><div className={styles.parceirosHolder}><img src="/osg.png" alt="" /></div></SwiperSlide>
                   <SwiperSlide><div className={styles.parceirosHolder}><img src="/hgt.png" alt="" /></div></SwiperSlide>
                   <SwiperSlide><div className={styles.parceirosHolder}><img src="/startool.png" alt="" /></div></SwiperSlide>
-                  <SwiperSlide><div className={styles.parceirosHolder}><img src="/geotecno.png" alt="" /></div></SwiperSlide>
+                  <SwiperSlide><div className={styles.parceirosHolder}><img src="/hev.png" alt="" /></div></SwiperSlide>
                   <SwiperSlide><div className={styles.parceirosHolder}><img src="/spinwiser.png" alt="" /></div></SwiperSlide>
                   <SwiperSlide><div className={styles.parceirosHolder}><img src="/american.png" alt="" /></div></SwiperSlide>
                   <SwiperSlide><div className={styles.parceirosHolder}><img src="/bt-fixo.jpg" alt="" /></div></SwiperSlide>

@@ -141,7 +141,7 @@ export default function Parceiros() {
 
                         <p>A NISSIN SOLUTIONS possui exclusividade de distribuição das nossas ferramentas para todo território brasileiro.</p>
 
-                        <p>Saiba mais sobre a StarTool: <a target="_blank" href="https://www.startool.co.kr">www.www.startool.co.kr</a></p>
+                        <p>Saiba mais sobre a StarTool: <a target="_blank" href="https://www.startool.co.kr">www.startool.co.kr</a></p>
                     </div>
 
                     <div className="col-12">
@@ -163,7 +163,7 @@ export default function Parceiros() {
 
                         <p>Conheça essa Plataforma, que revolucionou a forma de controle, armazenagem e liberação de ferramentas.</p>
 
-                        <p>Saiba mais sobre a Spinwiser: <a target="_blank" href="https://www.spinwiser.com.br/">https://www.spinwiser.com.br/</a></p>
+                        <p>Saiba mais sobre a Spinwiser: <a target="_blank" href="https://www.spinwiser.com.br/">www.spinwiser.com.br/</a></p>
                     </div>
 
                     <div className="col-12">
@@ -173,21 +173,23 @@ export default function Parceiros() {
 
                 <div className="row">
                     <div className="col-12 col-xl-3">
-                        <div className={styles.parceirosHolder}><img src="/geotecno.png" alt="" /></div>
+                        <div className={styles.parceirosHolder}><img src="/hev.png" alt="" /></div>
                     </div>
 
                     <div className="col-12 col-xl-8 offset-xl-1">
-                        <h4>GeoTecno</h4>
+                        <h4>Hofmann & Vratny OHG</h4>
 
-                        <p>A GeoTecno Soluções em Automação é uma empresa de tecnologia nacional localizada em Santa Bárbara d`Oeste – SP, e fornece soluções para a medição de ferramentas em processo (sistemas automáticos de presetting de ferramentas) e de medição de peças (sistemas apalpadores).</p>
+                        <p>Somos fabricantes de fresas há mais de 45 anos na região da Baviera na Alemanha.</p>
 
-                        <p>Criada em 2006 com a finalidade de desenvolver produtos inovadores com tecnologia totalmente nacional, visando possibilitar a Automação da Manufatura, em especial dos processos de usinagem.</p>
+                        <p>Nosso processo de fabricação de fresa é altamente padronizado o qual garante que cada fresa mantenha a repetibilidade geométrica e dimensional.</p>
 
-                        <p>Nosso desafio em Automação é desenvolver e criar tecnologia nacional acessível para as empresas de manufatura.</p>
+                        <p>Hofmann &amp; Vratny OHG, tem como objetivo, desempenhar um papel decisivo na formação e avanço da indústria, fabricando ferramentas que atendam as novas e futuras demandas de materiais.</p>
 
-                        <p>A NISSIN SOLUTIONS é a distribuidora especialista autorizada para os estados de Santa Catarina e Paraná.</p>
+                        <p>A longa vida útil e alta precisão dimensional de nossas ferramentas, garante uma excelente relação custo-benefício para nossos clientes.</p>
 
-                        <p>Saiba mais sobre a Geotecno: <a target="_blank" href="https://www.geotecno.com.br">www.geotecno.com.br</a></p>
+                        <p>A NISSIN SOLUTIONS possui exclusividade de distribuição das nossas ferramentas para todo o território brasileiro.</p>
+
+                        <p>Saiba mais sobre a H&V: <a target="_blank" href="https://www.hofmann-vratny.de/">www.hofmann-vratny.de</a></p>
                     </div>
 
                     <div className="col-12">

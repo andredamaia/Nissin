@@ -71,11 +71,11 @@ export default function Contato() {
                         </div>
 
                         <div className="col-12">
-                            <form className={styles.formHighlight} action="https://formsubmit.co/nissin@nissinsolutions.com.br" method="POST">
+                            <form action="https://formsubmit.co/1af29494c845cf38ea6ee33ec0669cfd" method="POST" className={styles.formHighlight}>
                                 <input type="hidden" name="_captcha" value="false" />
                                 <input type="hidden" name="_subject" value="Novo Contato" />
-                                <input type="hidden" name="_next" value="http://localhost:3000/sucesso" />
-                                <input type="hidden" name="_cc" value="nissin@nissinmetais.com.br"></input>
+                                <input type="hidden" name="_next" value="https://nissinsolutions.com.br/?send=success" />
+                                <input type="hidden" name="_cc" value="nissin@nissinmetais.com.br" />
 
                                 <input type="text" name="Nome" placeholder="Seu Nome" required/>
 
