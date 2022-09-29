@@ -56,7 +56,7 @@ export default function Sobre() {
                                 <div className={styles.produtosTitle}>
                                     <h4>Missão</h4>
 
-                                    <p>Fornecer soluções com inovação tecnológica, implantado melhorias contínuas em processos indústrias, aplicando ferramentas de excelente custo- benefício, desenvolvendo o capital humano e gerando lucro.</p>
+                                    <p>Fornecer soluções com inovação tecnológica, implantando melhorias contínuas em processos industriais, aplicando ferramentas de excelente custo-benefício, desenvolvendo o capital humano e gerando lucro.</p>
                                 </div>
                             </div>
 
